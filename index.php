@@ -14,13 +14,22 @@
 
 <a class="button" href="login-screen.php">Go to temporary login screen</a>
 <div class="page-wrap">
+<div class="Homepage">
 
-<div class="Content-entry">
-	<div class="container">
+<div class="Sidebar-wrap">
+	<div class="box1"></div>
+	<div class="box2"></div>
+</div>
 
-		
+<div class="SidebarFix">
+	<div class="Content-wrap">
+		<div class="Top-bar"></div>
 
-	</div><!-- container -->
+		<div class="Content-entry">
+			
+		</div>
+	</div>
+
 </div><!-- Content-entry -->
 
 </div><!-- Homepage -->

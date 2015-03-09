@@ -34,7 +34,7 @@ html, body {
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -20px;
+  margin-bottom: 0px;
   background-color: #EEEEEE; }
 
 .page-wrap:after {
@@ -43,7 +43,7 @@ html, body {
 
 .site-footer, .page-wrap:after {
   /* .push must be the same height as footer */
-  height: 20px; }
+  height: 0px; }
 
 .site-footer {
   background: white;
@@ -125,5 +125,33 @@ html, body {
       color: #C9C9C9;
       padding: 10px;
       margin: 10px 40px 15px; }
+
+.Sidebar-wrap {
+  width: 350px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 8; }
+  .Sidebar-wrap .box1 {
+    height: 300px;
+    width: 100%;
+    background-color: #FFEDED; }
+
+.Homepage .SidebarFix {
+  padding-left: 350px; }
+  .Homepage .SidebarFix .Content-wrap {
+    padding: 30px; }
+  .Homepage .SidebarFix .Top-bar {
+    background-color: white;
+    display: block;
+    padding: 10px;
+    height: 80px; }
+  .Homepage .SidebarFix .Content-entry {
+    margin: 40px auto 20px;
+    max-width: 700px;
+    background-color: white;
+    min-height: 500px; }
 
 /*# sourceMappingURL=main.css.map */

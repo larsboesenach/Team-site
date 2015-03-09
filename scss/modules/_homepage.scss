@@ -1,0 +1,37 @@
+
+.Sidebar-wrap {
+	width: 350px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 8;
+
+	.box1 {
+		height: 300px;
+		width: 100%;
+		background-color: #FFEDED;
+	}	
+}
+
+.Homepage .SidebarFix {
+	padding-left: 350px;
+
+	.Content-wrap {
+		padding: 30px;
+	}
+	.Top-bar {
+		background-color: white;
+		display: block;
+		padding: 10px;
+		height: 80px;
+	}
+
+	.Content-entry {
+		margin: 40px auto 20px;
+		max-width: 700px;
+		background-color: white;
+		min-height: 500px;
+	}
+}

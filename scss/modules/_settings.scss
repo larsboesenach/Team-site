@@ -1,0 +1,66 @@
+/**************************************************
+
+	In this file we place all the Variables ;)
+
+**************************************************/
+
+// Fonts
+$font: 			  'Open Sans', sans-serif;
+$font-second:	'Oxygen', sans-serif;
+//-----------------------------
+
+
+// Colors
+$black: 		#4a4a4c;
+$blue: 			#163F57;
+$blue-dark:		#232C31;
+
+$grey-bg1:		#EEEEEE;
+$grey-bg2:    #F5F5F5;
+//----------------------
+
+
+// Settings
+
+a,p,
+h1,h2,h3,
+h4,h5,h6 {
+	color: $blue;
+	font-family: $font;
+  letter-spacing: 0.5px;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+
+
+//--------------------
+// 	  page-wrap 
+//--------------------
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -20px; 
+  background-color: $grey-bg1;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after { 
+  /* .push must be the same height as footer */
+  height: 20px; 
+}
+.site-footer {
+  background: white;
+  border-top: 1px solid $grey-bg1;
+}
+
+//--------------------
+
+

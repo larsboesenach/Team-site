@@ -1,0 +1,28 @@
+/*
+
+	Main SCSS file that you use to import all the separate modules and then compile them to the css file
+	----------------------------------------------------------------------------------------------------
+	
+	Om alle SCSS te compilen naar de main.css moet je in je Terminal deze code invoegen:
+	
+	1. 	Ga eerst naar de main folder "Lars-portfolio"
+	
+	2. 	Typ dan: sass --watch scss/main.scss:css/main.css
+	
+		Door deze command kijkt SASS naar veranderingen in de scss folder, 
+		zodra je een aanpassing maakt aan een file die ge-Import is in de "main.scss" wordt het meteen gecompiled naar de main.css folder.
+
+*/
+
+//----------------------------
+//	Place the imports in this 
+//----------------------------
+
+@import "modules/settings";
+
+@import "modules/login-screen";
+
+@import "modules/footer";
+
+
+//----------------------------

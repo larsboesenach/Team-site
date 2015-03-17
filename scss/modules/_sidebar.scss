@@ -1,0 +1,102 @@
+
+.Sidebar-wrap {
+	a,p,
+	h1,h2,h3,
+	h4,h5,h6 {
+		color: $purple;
+	}
+
+	hr {
+		border: 0px solid white;
+		background-color: $purple;
+		opacity: 0.2;
+		height: 1px;
+		margin: 15px 0;
+	}
+}
+
+.Sidebar-wrap {
+	width: 350px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 8;
+	overflow: hidden;
+
+	.Circle-wrap {
+		height: 300px;
+		width: 100%;
+		
+	}
+
+	.Sidebar-goal-wrap {
+		position: relative;
+		z-index: 90;
+		overflow: hidden;
+		padding-bottom: 20px;
+
+		.Sidebar-goal {
+			background-color: $blue-3;
+			padding: 25px;
+			color: $purple;
+			text-transform: uppercase;
+			box-shadow: $box-shadow;
+			
+			h2 {
+				text-align: center;
+				font-size: 18px;
+				letter-spacing: 1px;
+				margin: 0;
+				color: $purple;
+			}
+		}
+	}// Sidebar goal wrap
+
+	.Sidebar-log-wrap {
+		position: relative;
+		z-index: 89;
+		margin-top: -20px;
+		background-color: $blue-2;
+		
+		.Sidebar-log {
+			padding: 20px 30px;
+			
+			.Week-wrap {
+				.Week-overview {
+					padding: 5px;
+				}
+
+				.Week-count {
+					position: relative;
+					.navigator {
+						display: block;
+						position: absolute;
+						top: 0;
+						font-size: 35px;
+					}
+					.navigator.left {
+						left: 0;
+					}
+					.navigator.right {
+						right: 0;
+					}
+				}
+
+				h2 {
+					text-align: center;
+					font-size: 18px;
+					letter-spacing: 1px;
+					margin: 0;
+					text-transform: uppercase;
+				}
+				p {
+					text-align: center;
+					font-size: 12px;
+					margin: 5px;
+				}
+			}
+		}
+	}// Sidebar log wrap
+}

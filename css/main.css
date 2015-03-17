@@ -21,7 +21,7 @@
 a, p,
 h1, h2, h3,
 h4, h5, h6 {
-  color: #163F57;
+  color: #4a4a4c;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.5px; }
 
@@ -126,19 +126,6 @@ html, body {
       padding: 10px;
       margin: 10px 40px 15px; }
 
-.Sidebar-wrap {
-  width: 350px;
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 8; }
-  .Sidebar-wrap .box1 {
-    height: 300px;
-    width: 100%;
-    background-color: #FFEDED; }
-
 .Homepage .SidebarFix {
   padding-left: 350px; }
   .Homepage .SidebarFix .Content-wrap {
@@ -153,5 +140,76 @@ html, body {
     max-width: 700px;
     background-color: white;
     min-height: 500px; }
+
+.Sidebar-wrap a, .Sidebar-wrap p,
+.Sidebar-wrap h1, .Sidebar-wrap h2, .Sidebar-wrap h3,
+.Sidebar-wrap h4, .Sidebar-wrap h5, .Sidebar-wrap h6 {
+  color: #36216A; }
+.Sidebar-wrap hr {
+  border: 0px solid white;
+  background-color: #36216A;
+  opacity: 0.2;
+  height: 1px;
+  margin: 15px 0; }
+
+.Sidebar-wrap {
+  width: 350px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 8;
+  overflow: hidden; }
+  .Sidebar-wrap .Circle-wrap {
+    height: 300px;
+    width: 100%; }
+  .Sidebar-wrap .Sidebar-goal-wrap {
+    position: relative;
+    z-index: 90;
+    overflow: hidden;
+    padding-bottom: 20px; }
+    .Sidebar-wrap .Sidebar-goal-wrap .Sidebar-goal {
+      background-color: #89E1FF;
+      padding: 25px;
+      color: #36216A;
+      text-transform: uppercase;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); }
+      .Sidebar-wrap .Sidebar-goal-wrap .Sidebar-goal h2 {
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 0;
+        color: #36216A; }
+  .Sidebar-wrap .Sidebar-log-wrap {
+    position: relative;
+    z-index: 89;
+    margin-top: -20px;
+    background-color: #00C0FF; }
+    .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log {
+      padding: 20px 30px; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-overview {
+        padding: 5px; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count {
+        position: relative; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator {
+          display: block;
+          position: absolute;
+          top: 0;
+          font-size: 35px; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.left {
+          left: 0; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.right {
+          right: 0; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap h2 {
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 0;
+        text-transform: uppercase; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap p {
+        text-align: center;
+        font-size: 12px;
+        margin: 5px; }
 
 /*# sourceMappingURL=main.css.map */

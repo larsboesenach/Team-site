@@ -16,19 +16,16 @@
 <div class="page-wrap">
 <div class="Homepage">
 
-<div class="Sidebar-wrap">
-	<div class="box1"></div>
-	<div class="box2"></div>
-</div>
+<?php include('sidebar.php'); ?>
 
 <div class="SidebarFix">
-	<div class="Content-wrap">
-		<div class="Top-bar"></div>
+  <div class="Content-wrap">
+    <div class="Top-bar"></div>
 
-		<div class="Content-entry">
-			
-		</div>
-	</div>
+    <div class="Content-entry">
+      
+    </div>
+  </div>
 
 </div><!-- Content-entry -->
 

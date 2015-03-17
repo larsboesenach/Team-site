@@ -12,11 +12,16 @@ $font-second:	'Oxygen', sans-serif;
 
 // Colors
 $black: 		#4a4a4c;
-$blue: 			#163F57;
-$blue-dark:		#232C31;
+$blue-1: 		#0085B4;// dark-bg-blue
+$blue-2:		#00C0FF;// sidebar-log-blue
+$blue-3:    #89E1FF;// sidebar-goal-blue
+$purple:    #36216A;// color-from-logo
 
 $grey-bg1:		#EEEEEE;
 $grey-bg2:    #F5F5F5;
+
+
+$box-shadow:  0px 2px 5px rgba(0, 0, 0, 0.2);
 //----------------------
 
 
@@ -25,7 +30,7 @@ $grey-bg2:    #F5F5F5;
 a,p,
 h1,h2,h3,
 h4,h5,h6 {
-	color: $blue;
+	color: $black;
 	font-family: $font;
   letter-spacing: 0.5px;
 }

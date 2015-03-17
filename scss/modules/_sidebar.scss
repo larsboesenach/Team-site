@@ -21,7 +21,6 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	bottom: 0;
 	z-index: 8;
 	overflow: hidden;
 
@@ -64,6 +63,19 @@
 			padding: 20px 30px;
 			
 			.Week-wrap {
+				h2 {
+					text-align: center;
+					font-size: 18px;
+					letter-spacing: 1px;
+					margin: 0;
+					text-transform: uppercase;
+				}
+				p {
+					text-align: center;
+					font-size: 12px;
+					margin: 5px;
+				}
+
 				.Week-overview {
 					padding: 5px;
 				}
@@ -84,19 +96,67 @@
 					}
 				}
 
-				h2 {
-					text-align: center;
-					font-size: 18px;
-					letter-spacing: 1px;
-					margin: 0;
-					text-transform: uppercase;
-				}
-				p {
-					text-align: center;
-					font-size: 12px;
-					margin: 5px;
-				}
-			}
+				.Week-output {
+					table {
+						width: 100%;
+						
+						.day { 
+							min-width: 140px;
+							p {
+								text-align: left;
+							}
+						}
+						.exercise {
+							min-width: 70px;
+							p {
+								text-align: right;
+							}
+						}
+						.kcal {
+							min-width: 70px;
+							p {
+								text-align: right;
+							}
+						}
+						
+						tr.negative p {
+							color: $red;
+						}
+						tr.empty p {
+							opacity: 0.4;
+						}
+					}
+					.Indicators {
+						text-transform: uppercase;
+						table {
+							margin-bottom: 10px;
+							p {
+								font-size: 11px;
+							}
+						}
+					}
+					.Week-content {
+						p {
+							font-weight: 600;
+
+						}
+					}
+					.Week-average {
+						
+						.left p {
+							text-align: left;
+						}
+						.right p {
+							text-align: right;
+						}
+						p {
+							
+							font-size: 15px;
+							text-transform: uppercase;
+						}
+					}
+				}				
+			}// week wrap
 		}
 	}// Sidebar log wrap
 }

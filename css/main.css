@@ -158,7 +158,6 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
   z-index: 8;
   overflow: hidden; }
   .Sidebar-wrap .Circle-wrap {
@@ -188,6 +187,16 @@ html, body {
     background-color: #00C0FF; }
     .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log {
       padding: 20px 30px; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap h2 {
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 0;
+        text-transform: uppercase; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap p {
+        text-align: center;
+        font-size: 12px;
+        margin: 5px; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-overview {
         padding: 5px; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count {
@@ -201,15 +210,38 @@ html, body {
           left: 0; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.right {
           right: 0; }
-      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap h2 {
-        text-align: center;
-        font-size: 18px;
-        letter-spacing: 1px;
-        margin: 0;
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table {
+        width: 100%; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .day {
+          min-width: 140px; }
+          .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .day p {
+            text-align: left; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .exercise {
+          min-width: 70px; }
+          .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .exercise p {
+            text-align: right; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .kcal {
+          min-width: 70px; }
+          .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .kcal p {
+            text-align: right; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.negative p {
+          color: red; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.empty p {
+          opacity: 0.4; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators {
         text-transform: uppercase; }
-      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap p {
-        text-align: center;
-        font-size: 12px;
-        margin: 5px; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators table {
+          margin-bottom: 10px; }
+          .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators table p {
+            font-size: 11px; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-content p {
+        font-weight: 600; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .left p {
+        text-align: left; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .right p {
+        text-align: right; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average p {
+        font-size: 15px;
+        text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */

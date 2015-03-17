@@ -1,9 +1,14 @@
 
+html {
+	background-color: $blue-1;
+}
+
 .Homepage .SidebarFix {
 	padding-left: 350px;
 
 	.Content-wrap {
-		padding: 30px;
+		padding: 30px 30px 0 30px;
+
 	}
 	.Top-bar {
 		background-color: white;
@@ -13,7 +18,7 @@
 	}
 
 	.Content-entry {
-		margin: 40px auto 20px;
+		margin: 40px auto 0;
 		max-width: 700px;
 		background-color: white;
 		min-height: 500px;

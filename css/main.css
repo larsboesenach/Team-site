@@ -35,7 +35,7 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: 0px;
-  background-color: #EEEEEE; }
+  background-color: #0085B4; }
 
 .page-wrap:after {
   content: "";
@@ -45,24 +45,21 @@ html, body {
   /* .push must be the same height as footer */
   height: 0px; }
 
-.site-footer {
-  background: white;
-  border-top: 1px solid #EEEEEE; }
-
 .button {
   background-color: #F35656;
   color: white;
   padding: 10px;
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   display: inline-block;
   z-index: 10;
+  opacity: 0.5;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease; }
   .button:hover {
-    opacity: 0.8;
+    opacity: 1;
     color: white; }
 
 .LoginScreenPage {
@@ -126,31 +123,36 @@ html, body {
       padding: 10px;
       margin: 10px 40px 15px; }
 
+html {
+  background-color: #0085B4; }
+
 .Homepage .SidebarFix {
   padding-left: 350px; }
   .Homepage .SidebarFix .Content-wrap {
-    padding: 30px; }
+    padding: 30px 30px 0 30px; }
   .Homepage .SidebarFix .Top-bar {
     background-color: white;
     display: block;
     padding: 10px;
     height: 80px; }
   .Homepage .SidebarFix .Content-entry {
-    margin: 40px auto 20px;
+    margin: 40px auto 0;
     max-width: 700px;
     background-color: white;
     min-height: 500px; }
 
-.Sidebar-wrap a, .Sidebar-wrap p,
-.Sidebar-wrap h1, .Sidebar-wrap h2, .Sidebar-wrap h3,
-.Sidebar-wrap h4, .Sidebar-wrap h5, .Sidebar-wrap h6 {
-  color: #36216A; }
-.Sidebar-wrap hr {
-  border: 0px solid white;
-  background-color: #36216A;
-  opacity: 0.2;
-  height: 1px;
-  margin: 15px 0; }
+.Sidebar-wrap {
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); }
+  .Sidebar-wrap a, .Sidebar-wrap p,
+  .Sidebar-wrap h1, .Sidebar-wrap h2, .Sidebar-wrap h3,
+  .Sidebar-wrap h4, .Sidebar-wrap h5, .Sidebar-wrap h6 {
+    color: #36216A; }
+  .Sidebar-wrap hr {
+    border: 0px solid white;
+    background-color: #36216A;
+    opacity: 0.2;
+    height: 1px;
+    margin: 15px 0; }
 
 .Sidebar-wrap {
   width: 350px;
@@ -161,8 +163,56 @@ html, body {
   z-index: 8;
   overflow: hidden; }
   .Sidebar-wrap .Circle-wrap {
-    height: 300px;
+    min-height: 275px;
     width: 100%; }
+    .Sidebar-wrap .Circle-wrap .Circle-aligncenter {
+      max-width: 180px;
+      margin: 40px auto 20px; }
+      .Sidebar-wrap .Circle-wrap .Circle-aligncenter #circle {
+        position: relative; }
+      .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0; }
+        .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal p {
+          text-align: center;
+          font-size: 24px;
+          font-weight: 600;
+          text-transform: uppercase; }
+          .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal p i {
+            display: none; }
+      .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.top {
+        top: 53px; }
+      .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.hr {
+        top: 75px;
+        text-align: center; }
+        .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.hr .hr-- {
+          display: inline-block;
+          width: 70px;
+          height: 3px;
+          background-color: #36216A; }
+      .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.bottom {
+        top: 90px; }
+      .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.consumed {
+        position: absolute;
+        top: 122px; }
+        .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.consumed p {
+          text-align: center;
+          font-size: 9px; }
+    .Sidebar-wrap .Circle-wrap .Circle-progress-text {
+      padding-bottom: 15px; }
+      .Sidebar-wrap .Circle-wrap .Circle-progress-text h2 {
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 5px; }
+      .Sidebar-wrap .Circle-wrap .Circle-progress-text p, .Sidebar-wrap .Circle-wrap .Circle-progress-text span {
+        text-align: center;
+        font-size: 12px; }
+      .Sidebar-wrap .Circle-wrap .Circle-progress-text span {
+        font-weight: 600; }
   .Sidebar-wrap .Sidebar-goal-wrap {
     position: relative;
     z-index: 90;
@@ -186,7 +236,7 @@ html, body {
     margin-top: -20px;
     background-color: #00C0FF; }
     .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log {
-      padding: 20px 30px; }
+      padding: 20px 30px 5px; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap h2 {
         text-align: center;
         font-size: 18px;
@@ -204,8 +254,11 @@ html, body {
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator {
           display: block;
           position: absolute;
-          top: 0;
-          font-size: 35px; }
+          top: -5px;
+          font-size: 35px;
+          background-color: transparent;
+          border: 0px solid white;
+          color: #36216A; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.left {
           left: 0; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.right {
@@ -225,7 +278,7 @@ html, body {
           .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .kcal p {
             text-align: right; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.negative p {
-          color: red; }
+          color: #F92A08; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.empty p {
           opacity: 0.4; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators {

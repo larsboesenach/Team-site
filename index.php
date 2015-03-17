@@ -20,7 +20,9 @@
 
 <div class="SidebarFix">
   <div class="Content-wrap">
-    <div class="Top-bar"></div>
+    <div class="Top-bar">
+    	<p>Place this in the URL for the counter to show:</p><p> ?count=1250&goal=2500#</p>
+    </div>
 
     <div class="Content-entry">
       

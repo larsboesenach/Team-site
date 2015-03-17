@@ -1,5 +1,6 @@
 
 .Sidebar-wrap {
+	box-shadow: $box-shadow2;
 	a,p,
 	h1,h2,h3,
 	h4,h5,h6 {
@@ -25,10 +26,80 @@
 	overflow: hidden;
 
 	.Circle-wrap {
-		height: 300px;
+		min-height: 275px;
 		width: 100%;
-		
-	}
+		.Circle-aligncenter {
+			max-width: 180px;
+			margin: 40px auto 20px;
+
+			#circle {
+				position: relative;
+			}
+
+			.Circle-goal {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				p {
+					text-align: center;
+					font-size: 24px;
+					font-weight: 600;
+					text-transform: uppercase;
+					i {
+						display: none;
+					}
+				}
+			}
+
+			.Circle-goal.top {
+				top: 53px;
+			}
+
+			.Circle-goal.hr {
+				top: 75px;
+				text-align: center;
+				.hr-- {
+					display: inline-block;
+					width: 70px;
+					height: 3px;
+					background-color: $purple;
+				}
+			}
+
+			.Circle-goal.bottom {
+				top: 90px;
+			}
+
+			.Circle-goal.consumed {
+				position: absolute;
+				top: 122px;
+				p {
+					text-align: center;
+					font-size: 9px;
+					// font-weight: 400;
+				}
+			}
+		}
+
+		.Circle-progress-text {
+			padding-bottom: 15px;
+			h2 {
+				font-size: 22px;
+				text-align: center;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				margin-bottom: 5px;
+			}
+			p, span {
+				text-align: center;
+				font-size: 12px;
+			}
+			span {
+				font-weight: 600;
+			}
+		}
+	}// Circle-wrap
 
 	.Sidebar-goal-wrap {
 		position: relative;
@@ -60,7 +131,7 @@
 		background-color: $blue-2;
 		
 		.Sidebar-log {
-			padding: 20px 30px;
+			padding: 20px 30px 5px;
 			
 			.Week-wrap {
 				h2 {
@@ -85,8 +156,11 @@
 					.navigator {
 						display: block;
 						position: absolute;
-						top: 0;
+						top: -5px;
 						font-size: 35px;
+						background-color: transparent;
+						border: 0px solid white;
+						color: $purple;
 					}
 					.navigator.left {
 						left: 0;

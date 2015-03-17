@@ -1,6 +1,8 @@
 
 <div class="Sidebar-wrap">
-	<div class="Circle-wrap"></div>
+	<div class="Circle-wrap">
+		<?php include("includes/circle.php") ?>
+	</div>
 	
 	<div class="Sidebar-goal-wrap">
 		<div class="Sidebar-goal">
@@ -16,10 +18,12 @@
 				<hr>
 				
 				<div class="Week-count">
-					<a class="navigator left" href="#"> < </a>
+					<input class="navigator left" type="submit" name="back_week" value="<" />
+					
 					<h2>Week 05</h2>
 					<p>2 till 8 February</p>
-					<a class="navigator right" href="#"> > </a>
+					
+					<input class="navigator right" type="submit" name="back_week" value=">" />
 				</div>
 				
 				<hr>

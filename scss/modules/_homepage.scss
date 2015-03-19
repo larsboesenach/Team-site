@@ -1,8 +1,4 @@
 
-html {
-	background-color: $blue-1;
-}
-
 .Homepage .SidebarFix {
 	padding-left: 350px;
 
@@ -11,10 +7,65 @@ html {
 
 	}
 	.Top-bar {
-		background-color: white;
 		display: block;
-		padding: 10px;
-		height: 80px;
+		height: 100px;
+		padding: 40px;
+		position: relative;
+
+		.Topbar-Logo {
+			display: block;
+			width: 280px;
+			position: absolute;
+			top: 40px;
+			left: 40px;
+
+			img {
+				display: block;
+				height: 40px;
+				margin-top: -5px;
+				float: left;
+			}
+
+			p {
+				display: inline-block;
+				text-transform: uppercase;
+				color: white;
+				font-size: 18px;
+				letter-spacing: 2px;
+				padding-left: 20px;
+			}
+		}
+
+		.Topbar-User {
+			display: block;
+			width: 100%;
+			float: right;
+			text-align: right;
+			padding-left: 270px;
+
+			p {
+				display: inline-block;
+				text-transform: uppercase;
+				color: white;
+				font-size: 18px;
+				letter-spacing: 2px;
+				padding-right: 20px;
+			}
+
+			.User-img {
+				display: inline-block;
+				height: 50px;
+				width: 50px;
+				float: right;
+				margin-top: -10px;
+				overflow: hidden;
+				border-radius: 50px;
+				background-image: url('../img/pikachu-userprofile.png');
+				background-size: cover; 
+				background-position: center center;
+
+			}
+		}
 	}
 
 	.Content-entry {
@@ -22,5 +73,13 @@ html {
 		max-width: 700px;
 		background-color: white;
 		min-height: 500px;
+
+		.Content-Logo {
+			text-align: center;
+			padding: 30px;
+			img {
+				display: inline-block;
+			}
+		}
 	}
 }

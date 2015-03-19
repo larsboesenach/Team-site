@@ -1,2 +1,3 @@
 # Team-site
-The test site to work with github and grunt
+This is the Team website for our GLR final project.
+Name: CalorieCounter

@@ -28,6 +28,9 @@ h4, h5, h6 {
 a {
   text-decoration: none !important; }
 
+html {
+  background-color: #0085B4; }
+
 html, body {
   height: 100%; }
 
@@ -46,7 +49,6 @@ html, body {
   height: 0px; }
 
 .button {
-  background-color: #F35656;
   color: white;
   padding: 10px;
   position: absolute;
@@ -59,6 +61,22 @@ html, body {
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease; }
   .button:hover {
+    opacity: 1;
+    color: white; }
+
+.addProgress {
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 380px;
+  display: inline-block;
+  z-index: 10;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease; }
+  .addProgress:hover {
     opacity: 1;
     color: white; }
 
@@ -123,23 +141,67 @@ html, body {
       padding: 10px;
       margin: 10px 40px 15px; }
 
-html {
-  background-color: #0085B4; }
-
 .Homepage .SidebarFix {
   padding-left: 350px; }
   .Homepage .SidebarFix .Content-wrap {
     padding: 30px 30px 0 30px; }
   .Homepage .SidebarFix .Top-bar {
-    background-color: white;
     display: block;
-    padding: 10px;
-    height: 80px; }
+    height: 100px;
+    padding: 40px;
+    position: relative; }
+    .Homepage .SidebarFix .Top-bar .Topbar-Logo {
+      display: block;
+      width: 280px;
+      position: absolute;
+      top: 40px;
+      left: 40px; }
+      .Homepage .SidebarFix .Top-bar .Topbar-Logo img {
+        display: block;
+        height: 40px;
+        margin-top: -5px;
+        float: left; }
+      .Homepage .SidebarFix .Top-bar .Topbar-Logo p {
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding-left: 20px; }
+    .Homepage .SidebarFix .Top-bar .Topbar-User {
+      display: block;
+      width: 100%;
+      float: right;
+      text-align: right;
+      padding-left: 270px; }
+      .Homepage .SidebarFix .Top-bar .Topbar-User p {
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding-right: 20px; }
+      .Homepage .SidebarFix .Top-bar .Topbar-User .User-img {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        float: right;
+        margin-top: -10px;
+        overflow: hidden;
+        border-radius: 50px;
+        background-image: url("../img/pikachu-userprofile.png");
+        background-size: cover;
+        background-position: center center; }
   .Homepage .SidebarFix .Content-entry {
     margin: 40px auto 0;
     max-width: 700px;
     background-color: white;
     min-height: 500px; }
+    .Homepage .SidebarFix .Content-entry .Content-Logo {
+      text-align: center;
+      padding: 30px; }
+      .Homepage .SidebarFix .Content-entry .Content-Logo img {
+        display: inline-block; }
 
 .Sidebar-wrap {
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); }

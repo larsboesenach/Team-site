@@ -158,8 +158,7 @@ html, body {
       left: 40px; }
       .Homepage .SidebarFix .Top-bar .Topbar-Logo img {
         display: block;
-        height: 40px;
-        margin-top: -5px;
+        height: 25px;
         float: left; }
       .Homepage .SidebarFix .Top-bar .Topbar-Logo p {
         display: inline-block;
@@ -183,10 +182,10 @@ html, body {
         padding-right: 20px; }
       .Homepage .SidebarFix .Top-bar .Topbar-User .User-img {
         display: inline-block;
-        height: 50px;
-        width: 50px;
+        height: 42px;
+        width: 42px;
         float: right;
-        margin-top: -10px;
+        margin-top: -7px;
         overflow: hidden;
         border-radius: 50px;
         background-image: url("../img/pikachu-userprofile.png");
@@ -194,14 +193,46 @@ html, body {
         background-position: center center; }
   .Homepage .SidebarFix .Content-entry {
     margin: 40px auto 0;
+    padding: 0 60px;
     max-width: 700px;
     background-color: white;
-    min-height: 500px; }
+    min-height: 695px; }
     .Homepage .SidebarFix .Content-entry .Content-Logo {
       text-align: center;
-      padding: 30px; }
+      padding: 50px; }
       .Homepage .SidebarFix .Content-entry .Content-Logo img {
-        display: inline-block; }
+        display: inline-block;
+        max-width: 90px; }
+    .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-overview td {
+      padding-right: 50px; }
+    .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-overview p {
+      text-transform: uppercase;
+      color: #36216A;
+      font-size: 15px; }
+    .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table {
+      border-top: 1px solid #36216A;
+      width: 100%;
+      margin-top: 10px; }
+      .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr p {
+        text-transform: lowercase;
+        color: #36216A;
+        font-size: 13px; }
+      .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr:first-of-type p {
+        text-transform: uppercase;
+        color: #36216A;
+        font-size: 9px;
+        padding: 10px 0 0;
+        letter-spacing: 1px; }
+      .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr:nth-of-type(2) td {
+        padding-top: 10px; }
+      .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr:last-of-type td {
+        padding-bottom: 5px; }
+      .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table td:nth-of-type(3) {
+        text-align: right; }
+    .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table.fitness td:nth-of-type(3) {
+      text-align: left; }
+    .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table.fitness td:nth-of-type(4) {
+      text-align: right; }
 
 .Sidebar-wrap {
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); }

@@ -21,8 +21,7 @@
 
 			img {
 				display: block;
-				height: 40px;
-				margin-top: -5px;
+				height: 25px;
 				float: left;
 			}
 
@@ -54,10 +53,10 @@
 
 			.User-img {
 				display: inline-block;
-				height: 50px;
-				width: 50px;
+				height: 42px;
+				width: 42px;
 				float: right;
-				margin-top: -10px;
+				margin-top: -7px;
 				overflow: hidden;
 				border-radius: 50px;
 				background-image: url('../img/pikachu-userprofile.png');
@@ -70,16 +69,81 @@
 
 	.Content-entry {
 		margin: 40px auto 0;
+		padding: 0 60px;
 		max-width: 700px;
 		background-color: white;
-		min-height: 500px;
+		min-height: 695px;
 
 		.Content-Logo {
 			text-align: center;
-			padding: 30px;
+			padding: 50px;
 			img {
 				display: inline-block;
+				max-width: 90px;
 			}
+		}
+
+		.Entry-contents {
+			.Entry-overview {
+				td {
+					padding-right: 50px;
+				}
+				p {
+					text-transform: uppercase;
+					color: $purple;
+					font-size: 15px;
+				}
+			}
+
+			.Entry-entries {
+				table {
+					border-top: 1px solid $purple;
+					width: 100%;
+					margin-top: 10px;
+				
+					tr {		
+						p {
+							text-transform: lowercase;
+							color: $purple;
+							font-size: 13px;
+						}	
+					}
+					
+					tr:first-of-type {
+						p {
+							text-transform: uppercase;
+							color: $purple;
+							font-size: 9px;
+							padding: 10px 0 0;
+							letter-spacing: 1px;
+						}
+					}
+					
+					tr:nth-of-type(2) td {
+						padding-top: 10px;
+					}
+
+					tr:last-of-type td {
+						padding-bottom: 5px;
+					}
+
+					td:nth-of-type(3) {
+						text-align: right;
+					}
+				}// table
+
+				table.fitness {
+					td:nth-of-type(3) {
+						text-align: left;
+					}
+					td:nth-of-type(4) {
+						text-align: right;
+					}
+				}
+				
+			}// entries
+
+			
 		}
 	}
 }

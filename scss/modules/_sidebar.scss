@@ -12,25 +12,28 @@
 		background-color: $purple;
 		opacity: 0.2;
 		height: 1px;
-		margin: 15px 0;
+		margin: 13px 0;
 	}
 }
 
 .Sidebar-wrap {
 	width: 350px;
-	background-color: white;
-	position: absolute;
+	background-color: $blue-2;
+	position: fixed;
 	top: 0;
 	left: 0;
+	bottom: 0;
 	z-index: 8;
 	overflow: hidden;
 
 	.Circle-wrap {
 		min-height: 275px;
 		width: 100%;
+		padding-top: 30px;
+		background-color: white;
 		.Circle-aligncenter {
 			max-width: 180px;
-			margin: 40px auto 20px;
+			margin: 0px auto 0px;
 
 			#circle {
 				position: relative;
@@ -70,34 +73,23 @@
 			.Circle-goal.bottom {
 				top: 90px;
 			}
-
-			.Circle-goal.consumed {
-				position: absolute;
-				top: 122px;
-				p {
-					text-align: center;
-					font-size: 9px;
-					// font-weight: 400;
-				}
-			}
 		}
 
 		.Circle-progress-text {
-			padding-bottom: 15px;
+			padding-bottom: 5px;
 			h2 {
-				font-size: 22px;
+				font-size: 18px;
 				text-align: center;
 				text-transform: uppercase;
-				letter-spacing: 1px;
+				letter-spacing: $letter-sp-1;
 				margin-bottom: 5px;
+				margin-top: 15px;
 			}
 			p, span {
 				text-align: center;
 				font-size: 12px;
 			}
-			span {
-				font-weight: 600;
-			}
+			
 		}
 	}// Circle-wrap
 
@@ -109,7 +101,7 @@
 
 		.Sidebar-goal {
 			background-color: $blue-3;
-			padding: 25px;
+			padding: 20px;
 			color: $purple;
 			text-transform: uppercase;
 			box-shadow: $box-shadow;
@@ -117,7 +109,7 @@
 			h2 {
 				text-align: center;
 				font-size: 18px;
-				letter-spacing: 1px;
+				letter-spacing: $letter-sp-1;
 				margin: 0;
 				color: $purple;
 			}
@@ -137,7 +129,7 @@
 				h2 {
 					text-align: center;
 					font-size: 18px;
-					letter-spacing: 1px;
+					letter-spacing: $letter-sp-1;
 					margin: 0;
 					text-transform: uppercase;
 				}
@@ -196,6 +188,9 @@
 						tr.negative p {
 							color: $red;
 						}
+						tr.current-day p {
+							font-weight: 600;
+						}
 						tr.empty p {
 							opacity: 0.4;
 						}
@@ -209,12 +204,7 @@
 							}
 						}
 					}
-					.Week-content {
-						p {
-							font-weight: 600;
-
-						}
-					}
+					
 					.Week-average {
 						
 						.left p {

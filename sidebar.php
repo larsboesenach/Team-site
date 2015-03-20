@@ -13,14 +13,12 @@
 	<div class="Sidebar-log-wrap">
 		<div class="Sidebar-log">
 			<div class="Week-wrap">
-				<h2 class="Week-overview">Week overview</h2>
 				
-				<hr>
 				
 				<div class="Week-count">
 					<input class="navigator left" type="submit" name="back_week" value="<" />
 					
-					<h2>Week 05</h2>
+					<h2>Week overview</h2>
 					<p>2 till 8 February</p>
 					
 					<input class="navigator right" type="submit" name="back_week" value=">" />
@@ -61,7 +59,7 @@
 								<td class="exercise"><p>0</p></td>
 								<td class="kcal"><p>2610</p></td>
 							</tr>
-							<tr>
+							<tr class="current-day">
 								<td class="day"><p>Friday</p></td>
 								<td class="exercise"><p>920</p></td>
 								<td class="kcal"><p>2205</p></td>
@@ -89,9 +87,7 @@
 							</tr>
 						</table>
 					</div><!-- Week-Average -->
-
 					<hr>
-
 				</div><!-- Week-output -->
 			</div><!-- Week-wrap -->
 		</div><!-- Sidebar-log -->

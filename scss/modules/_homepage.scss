@@ -4,7 +4,6 @@
 
 	.Content-wrap {
 		padding: 30px 30px 0 30px;
-
 	}
 	.Top-bar {
 		display: block;
@@ -30,7 +29,7 @@
 				text-transform: uppercase;
 				color: white;
 				font-size: 18px;
-				letter-spacing: 2px;
+				letter-spacing: $letter-sp-1;
 				padding-left: 20px;
 			}
 		}
@@ -47,7 +46,7 @@
 				text-transform: uppercase;
 				color: white;
 				font-size: 18px;
-				letter-spacing: 2px;
+				letter-spacing: $letter-sp-1;
 				padding-right: 20px;
 			}
 
@@ -73,7 +72,7 @@
 		max-width: 700px;
 		background-color: white;
 		min-height: 695px;
-
+		position: relative;
 		.Content-Logo {
 			text-align: center;
 			padding: 50px;
@@ -115,7 +114,7 @@
 							color: $purple;
 							font-size: 9px;
 							padding: 10px 0 0;
-							letter-spacing: 1px;
+							letter-spacing: $letter-sp-1;
 						}
 					}
 					
@@ -142,8 +141,44 @@
 				}
 				
 			}// entries
+		}// Content-entries
 
-			
+		.Add-Button {
+			width: 50px;
+			height: 50px;
+			border-radius: 50px;
+			background-color: $green;
+			display: block;
+			position: absolute;
+			bottom: 20px;
+			right: -25px;
+			cursor: pointer;
+			z-index: 90;
+			text-align: center;
+			p {
+				display: inline-block;
+				font-size: 40px;
+				color: $purple;
+				margin: 0px;
+				margin-top: -4px;
+				font-weight: 200;
+
+			}
 		}
-	}
-}
+
+		.Entry-input-form {
+			height: 80px;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			bottom: -20px;
+			z-index: 80;
+			visibility: hidden;
+			background-color: $grey-bg1;
+		}
+		.Entry-input-form.open {
+			visibility: visible;
+			bottom: 0;
+		}
+	}// content-entry
+}// sidebar-fixx

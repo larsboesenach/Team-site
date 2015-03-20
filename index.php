@@ -117,7 +117,18 @@
 						</tr>
 					</table>
 				</div><!-- entries -->
+				
+				<div class="Add-Button" id="Add-Button"><p>+</p></div>
 
+				
+				<div class="Entry-make-new-entry">
+					<hr>
+					<p>Make a new entry</p>
+				</div>
+
+				<div class="Entry-input-form">
+					<p>Hello this is input form</p>
+				</div>
 
 			</div>
 		</div><!-- Content-entry -->

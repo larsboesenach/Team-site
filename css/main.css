@@ -23,7 +23,7 @@ h1, h2, h3,
 h4, h5, h6 {
   color: #4a4a4c;
   font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.5px; }
+  letter-spacing: 1.1px; }
 
 a {
   text-decoration: none !important; }
@@ -165,7 +165,7 @@ html, body {
         text-transform: uppercase;
         color: white;
         font-size: 18px;
-        letter-spacing: 2px;
+        letter-spacing: 1.1px;
         padding-left: 20px; }
     .Homepage .SidebarFix .Top-bar .Topbar-User {
       display: block;
@@ -178,7 +178,7 @@ html, body {
         text-transform: uppercase;
         color: white;
         font-size: 18px;
-        letter-spacing: 2px;
+        letter-spacing: 1.1px;
         padding-right: 20px; }
       .Homepage .SidebarFix .Top-bar .Topbar-User .User-img {
         display: inline-block;
@@ -196,7 +196,8 @@ html, body {
     padding: 0 60px;
     max-width: 700px;
     background-color: white;
-    min-height: 695px; }
+    min-height: 695px;
+    position: relative; }
     .Homepage .SidebarFix .Content-entry .Content-Logo {
       text-align: center;
       padding: 50px; }
@@ -222,7 +223,7 @@ html, body {
         color: #36216A;
         font-size: 9px;
         padding: 10px 0 0;
-        letter-spacing: 1px; }
+        letter-spacing: 1.1px; }
       .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr:nth-of-type(2) td {
         padding-top: 10px; }
       .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr:last-of-type td {
@@ -233,6 +234,37 @@ html, body {
       text-align: left; }
     .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table.fitness td:nth-of-type(4) {
       text-align: right; }
+    .Homepage .SidebarFix .Content-entry .Add-Button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      background-color: #00FF75;
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      right: -25px;
+      cursor: pointer;
+      z-index: 90;
+      text-align: center; }
+      .Homepage .SidebarFix .Content-entry .Add-Button p {
+        display: inline-block;
+        font-size: 40px;
+        color: #36216A;
+        margin: 0px;
+        margin-top: -4px;
+        font-weight: 200; }
+    .Homepage .SidebarFix .Content-entry .Entry-input-form {
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      z-index: 80;
+      visibility: hidden;
+      background-color: #EEEEEE; }
+    .Homepage .SidebarFix .Content-entry .Entry-input-form.open {
+      visibility: visible;
+      bottom: 0; }
 
 .Sidebar-wrap {
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); }
@@ -245,22 +277,25 @@ html, body {
     background-color: #36216A;
     opacity: 0.2;
     height: 1px;
-    margin: 15px 0; }
+    margin: 13px 0; }
 
 .Sidebar-wrap {
   width: 350px;
-  background-color: white;
-  position: absolute;
+  background-color: #00C0FF;
+  position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
   z-index: 8;
   overflow: hidden; }
   .Sidebar-wrap .Circle-wrap {
     min-height: 275px;
-    width: 100%; }
+    width: 100%;
+    padding-top: 30px;
+    background-color: white; }
     .Sidebar-wrap .Circle-wrap .Circle-aligncenter {
       max-width: 180px;
-      margin: 40px auto 20px; }
+      margin: 0px auto 0px; }
       .Sidebar-wrap .Circle-wrap .Circle-aligncenter #circle {
         position: relative; }
       .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal {
@@ -287,25 +322,18 @@ html, body {
           background-color: #36216A; }
       .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.bottom {
         top: 90px; }
-      .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.consumed {
-        position: absolute;
-        top: 122px; }
-        .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.consumed p {
-          text-align: center;
-          font-size: 9px; }
     .Sidebar-wrap .Circle-wrap .Circle-progress-text {
-      padding-bottom: 15px; }
+      padding-bottom: 5px; }
       .Sidebar-wrap .Circle-wrap .Circle-progress-text h2 {
-        font-size: 22px;
+        font-size: 18px;
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 5px; }
+        letter-spacing: 1.1px;
+        margin-bottom: 5px;
+        margin-top: 15px; }
       .Sidebar-wrap .Circle-wrap .Circle-progress-text p, .Sidebar-wrap .Circle-wrap .Circle-progress-text span {
         text-align: center;
         font-size: 12px; }
-      .Sidebar-wrap .Circle-wrap .Circle-progress-text span {
-        font-weight: 600; }
   .Sidebar-wrap .Sidebar-goal-wrap {
     position: relative;
     z-index: 90;
@@ -313,14 +341,14 @@ html, body {
     padding-bottom: 20px; }
     .Sidebar-wrap .Sidebar-goal-wrap .Sidebar-goal {
       background-color: #89E1FF;
-      padding: 25px;
+      padding: 20px;
       color: #36216A;
       text-transform: uppercase;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.35); }
       .Sidebar-wrap .Sidebar-goal-wrap .Sidebar-goal h2 {
         text-align: center;
         font-size: 18px;
-        letter-spacing: 1px;
+        letter-spacing: 1.1px;
         margin: 0;
         color: #36216A; }
   .Sidebar-wrap .Sidebar-log-wrap {
@@ -333,7 +361,7 @@ html, body {
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap h2 {
         text-align: center;
         font-size: 18px;
-        letter-spacing: 1px;
+        letter-spacing: 1.1px;
         margin: 0;
         text-transform: uppercase; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap p {
@@ -372,6 +400,8 @@ html, body {
             text-align: right; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.negative p {
           color: #F92A08; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.current-day p {
+          font-weight: 600; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.empty p {
           opacity: 0.4; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators {
@@ -380,8 +410,6 @@ html, body {
           margin-bottom: 10px; }
           .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators table p {
             font-size: 11px; }
-      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-content p {
-        font-weight: 600; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .left p {
         text-align: left; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .right p {

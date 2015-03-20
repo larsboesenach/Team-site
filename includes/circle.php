@@ -23,10 +23,6 @@ if (isset($_GET['goal']) && isset($_GET['count'])) {
         <div class="Circle-goal bottom">
             <p><?php echo $goal; ?></p>
         </div>
-
-        <div class="Circle-goal consumed">
-            <p>consumed</p>
-        </div>
     </div>
 </div>
 

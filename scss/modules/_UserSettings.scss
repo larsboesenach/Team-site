@@ -1,0 +1,28 @@
+
+.UserSettings {
+	visibility: hidden;
+	.Settings-bg {
+		opacity: 0;
+		top: 60px;
+		bottom: 0px;
+		left: 380px;
+		right: 30px;
+		
+		@include easing-mixin-1;
+	}
+}
+
+.UserSettings.show {
+	visibility: visible;
+	.Settings-bg {
+		opacity: 1;
+		bottom: 30px;
+		top: 30px;
+	}
+}
+
+.Settings-bg {
+	background-color: white;
+	position: fixed;
+	z-index: 200;
+}

@@ -4,6 +4,7 @@
 
 	.Content-wrap {
 		padding: 30px 30px 0 30px;
+		position: relative;
 	}
 	.Top-bar {
 		display: block;
@@ -41,6 +42,11 @@
 			text-align: right;
 			padding-left: 270px;
 
+			.UserWrap {
+				display: inline-block;
+				cursor: pointer;
+			}
+
 			p {
 				display: inline-block;
 				text-transform: uppercase;
@@ -58,7 +64,7 @@
 				margin-top: -7px;
 				overflow: hidden;
 				border-radius: 50px;
-				background-image: url('../img/pikachu-userprofile.png');
+				//background-image: url('../img/pikachu-userprofile.png');
 				background-size: cover; 
 				background-position: center center;
 
@@ -68,7 +74,7 @@
 
 	.Content-entry {
 		margin: 40px auto 0;
-		padding: 0 60px;
+		padding: 0 60px 90px;
 		max-width: 700px;
 		background-color: white;
 		min-height: 695px;
@@ -155,6 +161,8 @@
 			cursor: pointer;
 			z-index: 90;
 			text-align: center;
+
+			box-shadow: $box-shadow3;
 			p {
 				display: inline-block;
 				font-size: 40px;
@@ -165,20 +173,58 @@
 
 			}
 		}
+		
+		.Entry-emptyspace {
+			height: 0px;
+
+			@include easing-mixin-2;
+		}
+
+		.Entry-emptyspace.open {
+			height: 81px;
+		}
+
+		.Entry-make-new-entry {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 0 60px 20px;
+			
+			@include easing-mixin-2;
+
+			hr {
+				border-color: $purple;
+				margin-bottom: 25px;
+			}
+
+			p {
+				font-size: $FontSize-Titels;
+				color: $purple;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+		}
+		.Entry-make-new-entry.enlargeBotPad {
+			padding-bottom: 101px;
+		}
 
 		.Entry-input-form {
-			height: 80px;
+			height: 0px;
 			width: 100%;
 			position: absolute;
 			left: 0;
-			bottom: -20px;
+			bottom: 0px;
 			z-index: 80;
 			visibility: hidden;
-			background-color: $grey-bg1;
+			overflow: hidden;
+			background-color: $grey-bg3;
+
+			@include easing-mixin-2;
 		}
 		.Entry-input-form.open {
 			visibility: visible;
-			bottom: 0;
+			height: 81px;
 		}
 	}// content-entry
 }// sidebar-fixx

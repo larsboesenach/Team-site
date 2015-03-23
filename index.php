@@ -20,8 +20,10 @@
 
 <?php include('sidebar.php'); ?>
 
-<div class="SidebarFix">
+<div class="SidebarFix">	
 	<div class="Content-wrap">
+		<?php include('includes/UserSettings.php'); ?>
+		
 		<div class="Top-bar">
 			<div class="Topbar-Logo">
 				<img src="img/CC_white.svg">
@@ -29,9 +31,9 @@
 			</div>
 
 			<div class="Topbar-User">
-				<p>Kaasboer Hans</p>
-				<div class="User-img">
-					<!-- <img src="img/pikachu-userprofile.png"> -->
+				<div class="UserWrap">
+					<p>Kaasboer Hans</p>
+					<div class="User-img" style="background-image: url('img/pikachu-userprofile.png')"></div>
 				</div>
 			</div>
 		</div>
@@ -120,14 +122,26 @@
 				
 				<div class="Add-Button" id="Add-Button"><p>+</p></div>
 
-				
+				<div class="Entry-emptyspace"></div>
+
 				<div class="Entry-make-new-entry">
 					<hr>
 					<p>Make a new entry</p>
 				</div>
 
 				<div class="Entry-input-form">
-					<p>Hello this is input form</p>
+					<table>
+						<tr>
+							<td>amount</td>
+							<td>prod. name</td>
+							<td>calories</td>
+						</tr>
+						<tr>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+					</table>
 				</div>
 
 			</div>

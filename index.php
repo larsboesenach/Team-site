@@ -132,6 +132,14 @@
 				<div class="Entry-input-form">
 					<table>
 						<tr>
+							<td>consume</td>
+							<td>exercize</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="consume" value="consume"></td>
+							<td><input type="checkbox" name="exercise" value="exercise"></td>
+						</tr>
+						<tr>
 							<td>amount</td>
 							<td>prod. name</td>
 							<td>calories</td>

@@ -2,11 +2,9 @@
 
 <?php
 
-if (isset($_GET['goal']) && isset($_GET['count'])) {
-    $goal = $_GET['goal'];
-    $count = $_GET['count'];
+    $goal = 2500;
+    $count = 1250;
     $countervalue = $count / $goal;
-     };
 
 ?>
 

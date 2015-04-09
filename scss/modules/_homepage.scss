@@ -219,12 +219,22 @@
 			visibility: hidden;
 			overflow: hidden;
 			background-color: $grey-bg3;
+			padding: 0 60px;
+
+			td {
+				input {
+					border: 1px solid $purple;
+					padding: 3px;
+				}
+
+			}
+
 
 			@include easing-mixin-2;
 		}
 		.Entry-input-form.open {
 			visibility: visible;
-			height: 81px;
+			height: 151px;
 		}
 	}// content-entry
 }// sidebar-fixx

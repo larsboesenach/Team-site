@@ -295,13 +295,17 @@ html, body {
       visibility: hidden;
       overflow: hidden;
       background-color: #FCFCFC;
+      padding: 0 60px;
       -webkit-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       -moz-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+      .Homepage .SidebarFix .Content-entry .Entry-input-form td input {
+        border: 1px solid #36216A;
+        padding: 3px; }
     .Homepage .SidebarFix .Content-entry .Entry-input-form.open {
       visibility: visible;
-      height: 81px; }
+      height: 151px; }
 
 .Sidebar-wrap {
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); }

@@ -21,26 +21,7 @@ $(document).ready(function() {
 	
 	// - - - - - - - - - - - - -
 
-//
-    // Scroll to functionality
-    // a.scrollto 
-    // href="#ID-element"
-    //  scrollt 100px van bovenkant venster van element af met ID gelijk aan href
-    //
-    $(".scrollto").on('click',function (e) {
-      e.preventDefault();
 
-      var target = this.hash;
-      var $target = $(target);
-      var amount = 100;
-
-        $('html, body').stop().animate({
-          'scrollTop': $target.offset().top-amount
-        }, 700, 'swing', function () {
-          window.location.hash = target;
-        });
-
-    });
-	
+//	$("#Gotobottomofpage").animate({ scrollTop: $(document).height() }, "slow");	
 });
 	

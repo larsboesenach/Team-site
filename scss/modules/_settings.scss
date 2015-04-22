@@ -22,25 +22,29 @@ $letter-sp-1: 1.1px;
 
 // Overall Colors
 $black: 		#4a4a4c;
-$blue-1:		#24BFDD;// sidebar-goal-blue
-$blue-2:    #75D3EB;// sidebar-week-blue
+$blue-1:		#22C0DE;// sidebar-goal-blue
+$blue-2:    #76D4E9;// sidebar-week-blue
 $blue-3:    #20B6D3;// Sidebar-averageBG-blue
-$font-col:  #000915;// color-from-logo
+$blue-4:    #007990;
+
+$font-col:  #013D48;// color-from-logo
 $red:       #F92A08;
-$green:     #00FF75;
+$green:     #00FF6E;
 
 // Colors assigned to specific objects
 $grey-bg1:		#EEEEEE;
-$grey-bg2:    #F5F5F5;
+$grey-bg2:    #F7F7F7;//BG natural
 $grey-bg3:    #FCFCFC;
 //--------------------
 
 // Box-shadows
 $box-shadow:    0px 4px 10px -7px rgba(0, 0, 0, 0.35);
-$box-shadow2:   2px 0px 5px rgba(0, 0, 0, 0.2);
+$box-shadow2:   2px 0px 5px rgba(0, 0, 0, 0.2);         //normal 4 corner shadow
 $box-shadow3:   0px 10px 10px -7px rgba(0, 0, 0, 0.35);
-$box-shadow4:   0px 10px 10px -7px rgba(0, 0, 0, 0.25);//Circle shadow
+$box-shadow4:   0px 10px 10px -7px rgba(0, 0, 0, 0.25); //Circle shadow
+$box-shadow5:   0px 4px 12px -3px rgba(0, 0, 0, 0.35);  //Content-entry
 //----------------------
+
 
 // Easing mixins
 // - - - - - - 
@@ -55,6 +59,16 @@ $box-shadow4:   0px 10px 10px -7px rgba(0, 0, 0, 0.25);//Circle shadow
   -moz-transition:all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   -o-transition:all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+@mixin homeBG-gradient {
+  background: rgba(244,245,223,1);
+background: -moz-linear-gradient(top, rgba(244,245,223,1) 0%, rgba(244,245,223,1) 9%, rgba(0,143,91,1) 69%, rgba(34,78,89,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(244,245,223,1)), color-stop(9%, rgba(244,245,223,1)), color-stop(69%, rgba(0,143,91,1)), color-stop(100%, rgba(34,78,89,1)));
+background: -webkit-linear-gradient(top, rgba(244,245,223,1) 0%, rgba(244,245,223,1) 9%, rgba(0,143,91,1) 69%, rgba(34,78,89,1) 100%);
+background: -o-linear-gradient(top, rgba(244,245,223,1) 0%, rgba(244,245,223,1) 9%, rgba(0,143,91,1) 69%, rgba(34,78,89,1) 100%);
+background: -ms-linear-gradient(top, rgba(244,245,223,1) 0%, rgba(244,245,223,1) 9%, rgba(0,143,91,1) 69%, rgba(34,78,89,1) 100%);
+background: linear-gradient(to bottom, rgba(244,245,223,1) 0%, rgba(244,245,223,1) 9%, rgba(0,143,91,1) 69%, rgba(34,78,89,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5df', endColorstr='#224e59', GradientType=0 );
 }
 // - - - - - - 
 
@@ -73,7 +87,7 @@ a {
 }
 
 html {
-  //background-color: $blue-1;
+
 }
 
 
@@ -89,7 +103,8 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: 0px; 
-  background-color: $blue-1;
+  @include homeBG-gradient;
+  
 }
 .page-wrap:after {
   content: "";

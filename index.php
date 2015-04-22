@@ -12,8 +12,6 @@
 <?php// include('includes/navigation.php'); ?>
 <!-- ------------------ -->
 
-<a class="button" href="login-screen.php">Go to temporary login screen</a>
-<a class="addProgress" href="index.php?count=1250&goal=2500#">Add values to URL, so Progress circle works</a>
 
 <div class="page-wrap">
 <div class="Homepage">
@@ -26,8 +24,9 @@
 		
 		<div class="Top-bar">
 			<div class="Topbar-Logo">
-				<img src="img/CC_white.svg">
-				<p>Calorie Counter</p>
+				<a href="#">
+					<img src="img/cc_full-logo.svg">
+				</a>
 			</div>
 
 			<div class="Topbar-User">
@@ -41,28 +40,12 @@
 		<div class="Content-entry">
 			<div class="Content-Logo">
 				<img src="img/CC_grey.svg">
+				<h2>Todays Progress !</h2>
 			</div>
 
 
 			<div class="Entry-contents">
-				<div class="Entry-overview">
-					<table>
-						<tr>
-							<td><p>Date</p></td>
-							<td><p>05/02/2015</p></td>
-						</tr>
-						<tr>
-							<td><p>Food Entries</p></td>
-							<td><p>4</p></td>
-						</tr>
-						<tr>
-							<td><p>Exercise Entries</p></td>
-							<td><p>2</p></td>
-						</tr>
-					</table>
-				</div><!-- Entry-overview -->
-
-
+				<h2 class="Entry-intake">Intake</h2>
 
 				<div class="Entry-entries">
 					<table class="intake">
@@ -92,27 +75,40 @@
 							<td><p>special K bar</p></td>
 							<td><p>150</p></td>
 						</tr>
+						<tr>
+							<td><p>03x</p></td>
+							<td><p>special K bar</p></td>
+							<td><p>150</p></td>
+						</tr>
 
 					</table>
-				</div><!-- values -->
+				</div><!-- entries -->
+				
+				<h2 class="Entry-exercise">Exercise</h2>
 
 				<div class="Entry-entries">
 					<table class="fitness">
 						<tr>
-							<td><p>Minutes</p></td>
+							<td><p>Time</p></td>
 							<td><p>Intensity</p></td>
 							<td><p>Workout name</p></td>
 							<td><p>Kilo Calories (KCAL)</p></td>
 						</tr>
 						<!-- -------------- -->
 						<tr>
-							<td><p>30</p></td>
+							<td><p>0,5h</p></td>
 							<td><p>medium</p></td>
 							<td><p>running</p></td>
 							<td><p>595</p></td>
 						</tr>
 						<tr>
-							<td><p>60</p></td>
+							<td><p>0,5h</p></td>
+							<td><p>hard</p></td>
+							<td><p>fitness</p></td>
+							<td><p>500</p></td>
+						</tr>
+						<tr>
+							<td><p>1h</p></td>
 							<td><p>hard</p></td>
 							<td><p>fitness</p></td>
 							<td><p>500</p></td>
@@ -125,8 +121,7 @@
 				<div class="Entry-emptyspace"></div>
 
 				<div class="Entry-make-new-entry">
-					<hr>
-					<p>Make a new entry</p>
+					<p>Update goal</p>
 				</div>
 
 				<div class="Entry-input-form">

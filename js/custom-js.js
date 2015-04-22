@@ -11,11 +11,11 @@ $(document).ready(function() {
 	
 	// - - - - - - - - - - - - -
 	
-	$('.UserWrap').on('click', function() {
+	$('.UserWrap, .Topbar-Logo, .Sidebar-goal').on('click', function() {
 		$('.UserSettings').addClass('show');
 	});
 
-	$('.UserSettings').on('click', function() {
+	$('.UserClose-button').on('click', function() {
 		$('.UserSettings').removeClass('show');
 	});
 	

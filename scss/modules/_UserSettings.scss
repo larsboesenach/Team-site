@@ -1,12 +1,14 @@
 
 .UserSettings {
 	visibility: hidden;
+
 	.Settings-bg {
 		opacity: 0;
-		top: 60px;
-		bottom: 0px;
-		left: 380px;
-		right: 30px;
+		top: 	50px;
+		bottom: 50px;
+		left: 	50px;
+		right: 	50px;
+		overflow: hidden;
 		
 		@include easing-mixin-1;
 	}
@@ -16,8 +18,16 @@
 	visibility: visible;
 	.Settings-bg {
 		opacity: 1;
-		bottom: 30px;
-		top: 30px;
+		top: 	0px;
+		bottom: 0px;
+		left: 	0px;
+		right: 	0px;
+
+		.UserSidebar-wrap {
+			top: 	0px;
+			bottom: 0px;
+			left: 	0px;
+		}
 	}
 }
 
@@ -26,3 +36,92 @@
 	position: fixed;
 	z-index: 200;
 }
+
+.UserSidebar-wrap {
+	background-color: $blue-1;
+	position: fixed;
+	top: 	50px;
+	bottom: 50px;
+	left: 	50px;
+	width: 450px;
+
+	@include easing-mixin-1;
+
+	.UserSidebar-logo {
+		img {
+			display: block;
+			max-width: 70px;
+			margin: 70px auto 20px;
+		}
+
+		p {
+			font-size: $FontSize-Counter;
+			color: white;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 200;
+		}
+	}
+
+	.UserSidebar-button.goal {
+		margin-top: 80px;
+	}
+
+	.UserSidebar-button a {
+		background-color: $blue-4;
+		padding: 15px;
+		color: white;
+		font-weight: 200;
+		text-transform: uppercase;
+		border-radius: 100px;
+		box-shadow: $box-shadow;
+		margin: 15px 80px;
+		display: block;	
+		
+		text-align: center;
+		font-size: $FontSize-Titels;
+		letter-spacing: $letter-sp-1;
+	}
+}
+
+.User-content {
+	width: 100%;
+	height: 100%;
+	padding-left: 450px;
+	position: relative;
+
+	.UserClose-button {
+		display: block;
+		width:  200px;
+		height: 60px;
+		position: absolute;
+		top: 60px;
+		right: 50px;
+		padding: 10px;
+		cursor: pointer;
+
+		@include easing-mixin-1;
+
+		p {
+			font-size: $FontSize-Titels;
+			display: inline-block;
+			text-transform: uppercase;
+			padding-right: 10px;
+			margin: 0;
+		}
+		img {
+			display: inline-block;
+			max-width: 15px;
+			margin-top: -5px;
+		}
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+
+}
+
+
+

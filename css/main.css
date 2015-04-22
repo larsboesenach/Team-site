@@ -21,7 +21,7 @@
 a, p,
 h1, h2, h3,
 h4, h5, h6 {
-  color: #000915;
+  color: #013D48;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1.1px; }
 
@@ -35,7 +35,14 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: 0px;
-  background-color: #24BFDD; }
+  background: #f4f5df;
+  background: -moz-linear-gradient(top, #f4f5df 0%, #f4f5df 9%, #008f5b 69%, #224e59 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #f4f5df), color-stop(9%, #f4f5df), color-stop(69%, #008f5b), color-stop(100%, #224e59));
+  background: -webkit-linear-gradient(top, #f4f5df 0%, #f4f5df 9%, #008f5b 69%, #224e59 100%);
+  background: -o-linear-gradient(top, #f4f5df 0%, #f4f5df 9%, #008f5b 69%, #224e59 100%);
+  background: -ms-linear-gradient(top, #f4f5df 0%, #f4f5df 9%, #008f5b 69%, #224e59 100%);
+  background: linear-gradient(to bottom, #f4f5df 0%, #f4f5df 9%, #008f5b 69%, #224e59 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5df', endColorstr='#224e59', GradientType=0 ); }
 
 .page-wrap:after {
   content: "";
@@ -108,7 +115,7 @@ html, body {
     margin: 0px 40px; }
     .Login-box .input-fields input {
       border: 0 solid #000;
-      background-color: #F5F5F5;
+      background-color: #F7F7F7;
       color: #C9C9C9;
       padding: 10px;
       font-size: 16px;
@@ -161,7 +168,7 @@ html, body {
       .Homepage .SidebarFix .Top-bar .Topbar-Logo p {
         display: inline-block;
         text-transform: uppercase;
-        color: white;
+        color: #013D48;
         font-size: 18px;
         letter-spacing: 1.1px;
         padding-left: 20px; }
@@ -177,7 +184,7 @@ html, body {
       .Homepage .SidebarFix .Top-bar .Topbar-User p {
         display: inline-block;
         text-transform: uppercase;
-        color: white;
+        color: #013D48;
         font-size: 18px;
         letter-spacing: 1.1px;
         padding-right: 20px; }
@@ -193,35 +200,36 @@ html, body {
         background-position: center center; }
   .Homepage .SidebarFix .Content-entry {
     margin: 40px auto 0;
-    padding: 0 60px 90px;
+    padding: 0 60px 110px;
     max-width: 700px;
     background-color: white;
     min-height: 695px;
-    position: relative; }
+    position: relative;
+    box-shadow: 0px 4px 12px -3px rgba(0, 0, 0, 0.35); }
     .Homepage .SidebarFix .Content-entry .Content-Logo {
       text-align: center;
-      padding: 50px; }
+      padding: 50px 50px 25px; }
       .Homepage .SidebarFix .Content-entry .Content-Logo img {
         display: inline-block;
         max-width: 90px; }
-    .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-overview td {
-      padding-right: 50px; }
-    .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-overview p {
+      .Homepage .SidebarFix .Content-entry .Content-Logo h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-top: 35px; }
+    .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-intake, .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-exercise {
       text-transform: uppercase;
-      color: #000915;
-      font-size: 15px; }
+      font-size: 18px; }
     .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table {
-      border-top: 1px solid #000915;
       width: 100%;
       margin-top: 10px; }
       .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr p {
         text-transform: lowercase;
-        color: #000915;
-        font-size: 13px; }
+        color: #013D48;
+        font-size: 12px; }
       .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr:first-of-type p {
         text-transform: uppercase;
-        color: #000915;
-        font-size: 9px;
+        color: #013D48;
+        font-size: 8px;
         padding: 10px 0 0;
         letter-spacing: 1.1px; }
       .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr:nth-of-type(2) td {
@@ -238,7 +246,7 @@ html, body {
       width: 50px;
       height: 50px;
       border-radius: 50px;
-      background-color: #00FF75;
+      background-color: #00FF6E;
       display: block;
       position: absolute;
       bottom: 20px;
@@ -250,7 +258,7 @@ html, body {
       .Homepage .SidebarFix .Content-entry .Add-Button p {
         display: inline-block;
         font-size: 40px;
-        color: #000915;
+        color: #013D48;
         margin: 0px;
         margin-top: -4px;
         font-weight: 200; }
@@ -261,25 +269,28 @@ html, body {
       -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
     .Homepage .SidebarFix .Content-entry .Entry-emptyspace.open {
-      height: 81px; }
+      height: 80px; }
     .Homepage .SidebarFix .Content-entry .Entry-make-new-entry {
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      padding: 0 60px 20px;
+      padding: 30px;
+      background-color: #FCFCFC;
       -webkit-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       -moz-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+      .Homepage .SidebarFix .Content-entry .Entry-make-new-entry p {
+        text-align: center;
+        margin: 0; }
       .Homepage .SidebarFix .Content-entry .Entry-make-new-entry hr {
-        border-color: #000915;
+        border-color: #013D48;
         margin-bottom: 25px; }
       .Homepage .SidebarFix .Content-entry .Entry-make-new-entry p {
         font-size: 18px;
-        color: #000915;
-        text-transform: uppercase;
-        letter-spacing: 2px; }
+        color: #013D48;
+        text-transform: uppercase; }
     .Homepage .SidebarFix .Content-entry .Entry-make-new-entry.enlargeBotPad {
       padding-bottom: 101px; }
     .Homepage .SidebarFix .Content-entry .Entry-input-form {
@@ -298,21 +309,19 @@ html, body {
       -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
       .Homepage .SidebarFix .Content-entry .Entry-input-form td input {
-        border: 1px solid #000915;
         padding: 3px; }
     .Homepage .SidebarFix .Content-entry .Entry-input-form.open {
-      visibility: visible;
-      height: 151px; }
+      visibility: visible; }
 
 .Sidebar-wrap {
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); }
   .Sidebar-wrap a, .Sidebar-wrap p,
   .Sidebar-wrap h1, .Sidebar-wrap h2, .Sidebar-wrap h3,
   .Sidebar-wrap h4, .Sidebar-wrap h5, .Sidebar-wrap h6 {
-    color: #000915; }
+    color: #013D48; }
   .Sidebar-wrap hr {
     border: 0px solid white;
-    background-color: #000915;
+    background-color: #013D48;
     opacity: 0.2;
     height: 1px;
     margin: 13px 0; }
@@ -330,7 +339,7 @@ html, body {
     min-height: 275px;
     width: 100%;
     padding-top: 30px;
-    padding: 30px 50px 0px;
+    padding: 30px 70px 0px;
     background-color: white;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -363,7 +372,7 @@ html, body {
           display: inline-block;
           width: 70px;
           height: 2px;
-          background-color: #000915; }
+          background-color: #013D48; }
       .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.bottom {
         top: 92px; }
     .Sidebar-wrap .Circle-wrap .Circle-progress-text {
@@ -383,8 +392,8 @@ html, body {
     z-index: 90;
     padding-bottom: 10px; }
     .Sidebar-wrap .Sidebar-goal-wrap a.Sidebar-goal {
-      background-color: #24BFDD;
-      padding: 15px;
+      background-color: #22C0DE;
+      padding: 20px;
       border-radius: 100px;
       color: white;
       text-transform: uppercase;
@@ -411,8 +420,8 @@ html, body {
     .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-overview {
       padding: 5px; }
     .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count {
-      background-color: #75D3EB;
-      padding: 15px 50px; }
+      background-color: #76D4E9;
+      padding: 15px 70px; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .week-count-rel {
         position: relative; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator {
@@ -422,13 +431,13 @@ html, body {
         font-size: 35px;
         background-color: transparent;
         border: 0px solid white;
-        color: #000915; }
+        color: #013D48; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.left {
         left: 0; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.right {
         right: 0; }
     .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output {
-      background-color: #24BFDD; }
+      background-color: #22C0DE; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table {
         width: 100%; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .day {
@@ -451,16 +460,16 @@ html, body {
           opacity: 0.4; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators {
         text-transform: uppercase;
-        padding: 20px 50px 0px; }
+        padding: 20px 70px 0px; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators table {
           margin-bottom: 10px; }
           .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators table p {
             font-size: 8px; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-content {
-        padding: 0px 50px 20px; }
+        padding: 0px 70px 20px; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average {
         background-color: #20B6D3;
-        padding: 20px 50px; }
+        padding: 15px 70px; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .left p {
           text-align: left; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .right p {
@@ -474,10 +483,11 @@ html, body {
   visibility: hidden; }
   .UserSettings .Settings-bg {
     opacity: 0;
-    top: 60px;
-    bottom: 0px;
-    left: 380px;
-    right: 30px;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    overflow: hidden;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease; }
@@ -486,12 +496,84 @@ html, body {
   visibility: visible; }
   .UserSettings.show .Settings-bg {
     opacity: 1;
-    bottom: 30px;
-    top: 30px; }
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; }
+    .UserSettings.show .Settings-bg .UserSidebar-wrap {
+      top: 0px;
+      bottom: 0px;
+      left: 0px; }
 
 .Settings-bg {
   background-color: white;
   position: fixed;
   z-index: 200; }
+
+.UserSidebar-wrap {
+  background-color: #22C0DE;
+  position: fixed;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  width: 450px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease; }
+  .UserSidebar-wrap .UserSidebar-logo img {
+    display: block;
+    max-width: 70px;
+    margin: 70px auto 20px; }
+  .UserSidebar-wrap .UserSidebar-logo p {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200; }
+  .UserSidebar-wrap .UserSidebar-button.goal {
+    margin-top: 80px; }
+  .UserSidebar-wrap .UserSidebar-button a {
+    background-color: #007990;
+    padding: 15px;
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+    border-radius: 100px;
+    box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.35);
+    margin: 15px 80px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1.1px; }
+
+.User-content {
+  width: 100%;
+  height: 100%;
+  padding-left: 450px;
+  position: relative; }
+  .User-content .UserClose-button {
+    display: block;
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease; }
+    .User-content .UserClose-button p {
+      font-size: 18px;
+      display: inline-block;
+      text-transform: uppercase;
+      padding-right: 10px;
+      margin: 0; }
+    .User-content .UserClose-button img {
+      display: inline-block;
+      max-width: 15px;
+      margin-top: -5px; }
+    .User-content .UserClose-button:hover {
+      opacity: 0.6; }
 
 /*# sourceMappingURL=main.css.map */

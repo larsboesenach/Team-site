@@ -10,11 +10,17 @@
 
 			
 			<div class="UserSidebar-button goal">
-				<a href="#">Goal</a>
+				<p>Goal</p>
 			</div>
 
 			<div class="UserSidebar-button settings">
-				<a href="#">Settings</a>
+				<p>Settings</p>
+			</div>
+
+			<div class="UserLogout-wrap">
+				<div class="UserSidebar-button logout">
+					<p>Logout</p>
+				</div>
 			</div>
 
 		</div>

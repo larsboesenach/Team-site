@@ -391,8 +391,9 @@ html, body {
     position: relative;
     z-index: 90;
     padding-bottom: 10px; }
-    .Sidebar-wrap .Sidebar-goal-wrap a.Sidebar-goal {
+    .Sidebar-wrap .Sidebar-goal-wrap .Sidebar-goal {
       background-color: #22C0DE;
+      cursor: pointer;
       padding: 20px;
       border-radius: 100px;
       color: white;
@@ -400,6 +401,7 @@ html, body {
       box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.35);
       margin: 5px 0 20px;
       display: block;
+      font-weight: 400;
       text-align: center;
       font-size: 18px;
       letter-spacing: 1.1px; }
@@ -504,6 +506,9 @@ html, body {
       top: 0px;
       bottom: 0px;
       left: 0px; }
+    .UserSettings.show .Settings-bg .UserLogout-wrap {
+      bottom: 0;
+      left: 0; }
 
 .Settings-bg {
   background-color: white;
@@ -513,6 +518,7 @@ html, body {
 .UserSidebar-wrap {
   background-color: #22C0DE;
   position: fixed;
+  z-index: 210;
   top: 50px;
   bottom: 50px;
   left: 50px;
@@ -531,26 +537,43 @@ html, body {
     text-align: center;
     font-weight: 200; }
   .UserSidebar-wrap .UserSidebar-button.goal {
-    margin-top: 80px; }
-  .UserSidebar-wrap .UserSidebar-button a {
+    margin-top: 100px; }
+  .UserSidebar-wrap .UserSidebar-button p {
     background-color: #007990;
     padding: 15px;
+    cursor: pointer;
     color: white;
     font-weight: 200;
     text-transform: uppercase;
     border-radius: 100px;
-    box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.25);
     margin: 15px 80px;
     display: block;
-    text-align: center;
     font-size: 18px;
-    letter-spacing: 1.1px; }
+    border-width: 3px;
+    border-style: solid;
+    border-color: #007990;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease; }
+  .UserSidebar-wrap .UserLogout-wrap {
+    background-color: #20B6D3;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 450px;
+    padding: 20px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease; }
 
 .User-content {
   width: 100%;
   height: 100%;
   padding-left: 450px;
-  position: relative; }
+  position: relative;
+  z-index: 200; }
   .User-content .UserClose-button {
     display: block;
     width: 200px;
@@ -575,5 +598,19 @@ html, body {
       margin-top: -5px; }
     .User-content .UserClose-button:hover {
       opacity: 0.6; }
+
+.UserSettings.show.Settings-active .UserSidebar-button.settings p {
+  border-color: white;
+  background-color: #22C0DE; }
+.UserSettings.show.Settings-active .UserSidebar-button.goal p:hover {
+  background-color: #0097B4;
+  border-color: #0097B4; }
+
+.UserSettings.show.Goal-active .UserSidebar-button.goal p {
+  border-color: white;
+  background-color: #22C0DE; }
+.UserSettings.show.Goal-active .UserSidebar-button.settings p:hover {
+  background-color: #0097B4;
+  border-color: #0097B4; }
 
 /*# sourceMappingURL=main.css.map */

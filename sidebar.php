@@ -4,7 +4,7 @@
 		<?php include("includes/circle.php") ?>
 	
 		<div class="Sidebar-goal-wrap">
-			<a class="Sidebar-goal" href="#">Update goal</a>
+			<p class="Sidebar-goal">Update goal</p>
 		</div>
 	</div>
 	

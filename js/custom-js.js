@@ -10,15 +10,41 @@ $(document).ready(function() {
 	});
 	
 	// - - - - - - - - - - - - -
+	//	Go to Settings or Goal page
 	
-	$('.UserWrap, .Topbar-Logo, .Sidebar-goal').on('click', function() {
-		$('.UserSettings').addClass('show');
+	$('.UserWrap, .Topbar-Logo').on('click', function() {
+		$('.UserSettings').addClass('show'),
+		$('.UserSettings').addClass('Settings-active'),
+		$('.UserSettings').removeClass('Goal-active');
+	});
+
+	$('.Sidebar-goal').on('click', function() {
+		$('.UserSettings').addClass('show'),
+		$('.UserSettings').addClass('Goal-active'),
+		$('.UserSettings').removeClass('Settings-active');
 	});
 
 	$('.UserClose-button').on('click', function() {
 		$('.UserSettings').removeClass('show');
 	});
-	
+
+	// - - - - - - - - - - - - -
+	// 	Activate buttons
+
+	$('.UserSidebar-button.goal').on('click', function() {// Goal button
+		$('.UserSettings').addClass('Goal-active'),
+		$('.UserSettings').removeClass('Settings-active');
+	});
+
+	$('.UserSidebar-button.settings').on('click', function() {// Settings button
+		$('.UserSettings').addClass('Settings-active'),
+		$('.UserSettings').removeClass('Goal-active');
+	});
+
+	$('.UserSidebar-button.logout').on('click', function() {// Settings button
+		// new code for lougout button
+	});
+
 	// - - - - - - - - - - - - -
 
 

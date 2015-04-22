@@ -21,15 +21,12 @@
 a, p,
 h1, h2, h3,
 h4, h5, h6 {
-  color: #4a4a4c;
+  color: #000915;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1.1px; }
 
 a {
   text-decoration: none !important; }
-
-html {
-  background-color: #0085B4; }
 
 html, body {
   height: 100%; }
@@ -38,7 +35,7 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: 0px;
-  background-color: #0085B4; }
+  background-color: #24BFDD; }
 
 .page-wrap:after {
   content: "";
@@ -142,7 +139,7 @@ html, body {
       margin: 10px 40px 15px; }
 
 .Homepage .SidebarFix {
-  padding-left: 350px; }
+  padding-left: 450px; }
   .Homepage .SidebarFix .Content-wrap {
     padding: 30px 30px 0 30px;
     position: relative; }
@@ -211,19 +208,19 @@ html, body {
       padding-right: 50px; }
     .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-overview p {
       text-transform: uppercase;
-      color: #36216A;
+      color: #000915;
       font-size: 15px; }
     .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table {
-      border-top: 1px solid #36216A;
+      border-top: 1px solid #000915;
       width: 100%;
       margin-top: 10px; }
       .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr p {
         text-transform: lowercase;
-        color: #36216A;
+        color: #000915;
         font-size: 13px; }
       .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr:first-of-type p {
         text-transform: uppercase;
-        color: #36216A;
+        color: #000915;
         font-size: 9px;
         padding: 10px 0 0;
         letter-spacing: 1.1px; }
@@ -253,7 +250,7 @@ html, body {
       .Homepage .SidebarFix .Content-entry .Add-Button p {
         display: inline-block;
         font-size: 40px;
-        color: #36216A;
+        color: #000915;
         margin: 0px;
         margin-top: -4px;
         font-weight: 200; }
@@ -276,11 +273,11 @@ html, body {
       -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
       .Homepage .SidebarFix .Content-entry .Entry-make-new-entry hr {
-        border-color: #36216A;
+        border-color: #000915;
         margin-bottom: 25px; }
       .Homepage .SidebarFix .Content-entry .Entry-make-new-entry p {
         font-size: 18px;
-        color: #36216A;
+        color: #000915;
         text-transform: uppercase;
         letter-spacing: 2px; }
     .Homepage .SidebarFix .Content-entry .Entry-make-new-entry.enlargeBotPad {
@@ -301,7 +298,7 @@ html, body {
       -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
       .Homepage .SidebarFix .Content-entry .Entry-input-form td input {
-        border: 1px solid #36216A;
+        border: 1px solid #000915;
         padding: 3px; }
     .Homepage .SidebarFix .Content-entry .Entry-input-form.open {
       visibility: visible;
@@ -312,17 +309,17 @@ html, body {
   .Sidebar-wrap a, .Sidebar-wrap p,
   .Sidebar-wrap h1, .Sidebar-wrap h2, .Sidebar-wrap h3,
   .Sidebar-wrap h4, .Sidebar-wrap h5, .Sidebar-wrap h6 {
-    color: #36216A; }
+    color: #000915; }
   .Sidebar-wrap hr {
     border: 0px solid white;
-    background-color: #36216A;
+    background-color: #000915;
     opacity: 0.2;
     height: 1px;
     margin: 13px 0; }
 
 .Sidebar-wrap {
-  width: 350px;
-  background-color: #00C0FF;
+  width: 450px;
+  background-color: #20B6D3;
   position: fixed;
   top: 0;
   left: 0;
@@ -333,12 +330,19 @@ html, body {
     min-height: 275px;
     width: 100%;
     padding-top: 30px;
-    background-color: white; }
+    padding: 30px 50px 0px;
+    background-color: white;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 90; }
     .Sidebar-wrap .Circle-wrap .Circle-aligncenter {
       max-width: 180px;
       margin: 0px auto 0px; }
       .Sidebar-wrap .Circle-wrap .Circle-aligncenter #circle {
-        position: relative; }
+        position: relative;
+        box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.25);
+        border-radius: 100px;
+        height: 180px; }
       .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal {
         position: absolute;
         top: 0;
@@ -347,22 +351,21 @@ html, body {
         .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal p {
           text-align: center;
           font-size: 24px;
-          font-weight: 600;
           text-transform: uppercase; }
           .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal p i {
             display: none; }
       .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.top {
-        top: 53px; }
+        top: 55px; }
       .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.hr {
-        top: 75px;
+        top: 77px;
         text-align: center; }
         .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.hr .hr-- {
           display: inline-block;
           width: 70px;
-          height: 3px;
-          background-color: #36216A; }
+          height: 2px;
+          background-color: #000915; }
       .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.bottom {
-        top: 90px; }
+        top: 92px; }
     .Sidebar-wrap .Circle-wrap .Circle-progress-text {
       padding-bottom: 5px; }
       .Sidebar-wrap .Circle-wrap .Circle-progress-text h2 {
@@ -371,60 +374,61 @@ html, body {
         text-transform: uppercase;
         letter-spacing: 1.1px;
         margin-bottom: 5px;
-        margin-top: 15px; }
+        margin-top: 25px; }
       .Sidebar-wrap .Circle-wrap .Circle-progress-text p, .Sidebar-wrap .Circle-wrap .Circle-progress-text span {
         text-align: center;
         font-size: 12px; }
   .Sidebar-wrap .Sidebar-goal-wrap {
     position: relative;
     z-index: 90;
-    overflow: hidden;
-    padding-bottom: 20px; }
-    .Sidebar-wrap .Sidebar-goal-wrap .Sidebar-goal {
-      background-color: #89E1FF;
-      padding: 20px;
-      color: #36216A;
+    padding-bottom: 10px; }
+    .Sidebar-wrap .Sidebar-goal-wrap a.Sidebar-goal {
+      background-color: #24BFDD;
+      padding: 15px;
+      border-radius: 100px;
+      color: white;
       text-transform: uppercase;
-      box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.35); }
-      .Sidebar-wrap .Sidebar-goal-wrap .Sidebar-goal h2 {
-        text-align: center;
-        font-size: 18px;
-        letter-spacing: 1.1px;
-        margin: 0;
-        color: #36216A; }
+      box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.35);
+      margin: 5px 0 20px;
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1.1px; }
   .Sidebar-wrap .Sidebar-log-wrap {
     position: relative;
     z-index: 89;
-    margin-top: -20px;
-    background-color: #00C0FF; }
-    .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log {
-      padding: 20px 30px 5px; }
-      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap h2 {
-        text-align: center;
-        font-size: 18px;
-        letter-spacing: 1.1px;
-        margin: 0;
-        text-transform: uppercase; }
-      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap p {
-        text-align: center;
-        font-size: 12px;
-        margin: 5px; }
-      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-overview {
-        padding: 5px; }
-      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count {
+    background-color: #20B6D3; }
+    .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap h2 {
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1.1px;
+      margin: 0;
+      text-transform: uppercase; }
+    .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap p {
+      text-align: center;
+      font-size: 12px;
+      margin: 5px; }
+    .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-overview {
+      padding: 5px; }
+    .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count {
+      background-color: #75D3EB;
+      padding: 15px 50px; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .week-count-rel {
         position: relative; }
-        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator {
-          display: block;
-          position: absolute;
-          top: -5px;
-          font-size: 35px;
-          background-color: transparent;
-          border: 0px solid white;
-          color: #36216A; }
-        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.left {
-          left: 0; }
-        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.right {
-          right: 0; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator {
+        display: block;
+        position: absolute;
+        top: -5px;
+        font-size: 35px;
+        background-color: transparent;
+        border: 0px solid white;
+        color: #000915; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.left {
+        left: 0; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.right {
+        right: 0; }
+    .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output {
+      background-color: #24BFDD; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table {
         width: 100%; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .day {
@@ -446,18 +450,25 @@ html, body {
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.empty p {
           opacity: 0.4; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators {
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        padding: 20px 50px 0px; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators table {
           margin-bottom: 10px; }
           .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Indicators table p {
-            font-size: 11px; }
-      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .left p {
-        text-align: left; }
-      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .right p {
-        text-align: right; }
-      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average p {
-        font-size: 15px;
-        text-transform: uppercase; }
+            font-size: 8px; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-content {
+        padding: 0px 50px 20px; }
+      .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average {
+        background-color: #20B6D3;
+        padding: 20px 50px; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .left p {
+          text-align: left; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .right p {
+          text-align: right; }
+        .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average p {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 600; }
 
 .UserSettings {
   visibility: hidden; }

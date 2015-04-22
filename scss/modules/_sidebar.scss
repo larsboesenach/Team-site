@@ -4,12 +4,12 @@
 	a,p,
 	h1,h2,h3,
 	h4,h5,h6 {
-		color: $purple;
+		color: $font-col;
 	}
 
 	hr {
 		border: 0px solid white;
-		background-color: $purple;
+		background-color: $font-col;
 		opacity: 0.2;
 		height: 1px;
 		margin: 13px 0;
@@ -17,8 +17,8 @@
 }
 
 .Sidebar-wrap {
-	width: 350px;
-	background-color: $blue-2;
+	width: 450px;
+	background-color: $blue-3;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -26,17 +26,26 @@
 	z-index: 8;
 	overflow: hidden;
 
+
 	.Circle-wrap {
 		min-height: 275px;
 		width: 100%;
 		padding-top: 30px;
+		padding: 30px 50px 0px;
 		background-color: white;
+		box-shadow: $box-shadow2;
+		position: relative;
+		z-index: 90;
+
 		.Circle-aligncenter {
 			max-width: 180px;
 			margin: 0px auto 0px;
 
 			#circle {
 				position: relative;
+				box-shadow: $box-shadow4;
+				border-radius: 100px;
+				height: 180px;
 			}
 
 			.Circle-goal {
@@ -46,8 +55,7 @@
 				right: 0;
 				p {
 					text-align: center;
-					font-size: 24px;
-					font-weight: 600;
+					font-size: 24px;					
 					text-transform: uppercase;
 					i {
 						display: none;
@@ -56,38 +64,38 @@
 			}
 
 			.Circle-goal.top {
-				top: 53px;
+				top: 55px;
 			}
 
 			.Circle-goal.hr {
-				top: 75px;
+				top: 77px;
 				text-align: center;
 				.hr-- {
 					display: inline-block;
 					width: 70px;
-					height: 3px;
-					background-color: $purple;
+					height: 2px;
+					background-color: $font-col;
 				}
 			}
 
 			.Circle-goal.bottom {
-				top: 90px;
+				top: 92px;
 			}
 		}
 
 		.Circle-progress-text {
 			padding-bottom: 5px;
 			h2 {
-				font-size: 18px;
+				font-size: $FontSize-Titels;
 				text-align: center;
 				text-transform: uppercase;
 				letter-spacing: $letter-sp-1;
 				margin-bottom: 5px;
-				margin-top: 15px;
+				margin-top: 25px;
 			}
 			p, span {
 				text-align: center;
-				font-size: 12px;
+				font-size: $FontSize-Subtext;
 			}
 			
 		}
@@ -96,46 +104,44 @@
 	.Sidebar-goal-wrap {
 		position: relative;
 		z-index: 90;
-		overflow: hidden;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 
-		.Sidebar-goal {
-			background-color: $blue-3;
-			padding: 20px;
-			color: $purple;
+		a.Sidebar-goal {
+			background-color: $blue-1;
+			padding: 15px;
+			border-radius: 100px;
+			color: white;
 			text-transform: uppercase;
 			box-shadow: $box-shadow;
+			margin: 5px 0 20px;
+			display: block;	
 			
-			h2 {
-				text-align: center;
-				font-size: 18px;
-				letter-spacing: $letter-sp-1;
-				margin: 0;
-				color: $purple;
-			}
+			text-align: center;
+			font-size: $FontSize-Titels;
+			letter-spacing: $letter-sp-1;
+		
+			
+			
 		}
 	}// Sidebar goal wrap
 
 	.Sidebar-log-wrap {
 		position: relative;
 		z-index: 89;
-		margin-top: -20px;
-		background-color: $blue-2;
+		background-color: $blue-3;
 		
 		.Sidebar-log {
-			padding: 20px 30px 5px;
-			
 			.Week-wrap {
 				h2 {
 					text-align: center;
-					font-size: 18px;
+					font-size: $FontSize-Titels;
 					letter-spacing: $letter-sp-1;
 					margin: 0;
 					text-transform: uppercase;
 				}
 				p {
 					text-align: center;
-					font-size: 12px;
+					font-size: $FontSize-Subtext;
 					margin: 5px;
 				}
 
@@ -144,7 +150,13 @@
 				}
 
 				.Week-count {
-					position: relative;
+					background-color: $blue-2;
+					padding: 15px 50px;
+					
+					.week-count-rel {
+						position: relative;
+					}
+
 					.navigator {
 						display: block;
 						position: absolute;
@@ -152,7 +164,7 @@
 						font-size: 35px;
 						background-color: transparent;
 						border: 0px solid white;
-						color: $purple;
+						color: $font-col;
 					}
 					.navigator.left {
 						left: 0;
@@ -163,6 +175,7 @@
 				}
 
 				.Week-output {
+					background-color: $blue-1;
 					table {
 						width: 100%;
 						
@@ -197,16 +210,22 @@
 					}
 					.Indicators {
 						text-transform: uppercase;
+						padding: 20px 50px 0px;
 						table {
 							margin-bottom: 10px;
 							p {
-								font-size: 11px;
+								font-size: $FontSize-SubInfo;
 							}
 						}
 					}
+
+					.Week-content {
+						padding: 0px 50px 20px;
+					}
 					
 					.Week-average {
-						
+						background-color: $blue-3;
+						padding: 20px 50px;
 						.left p {
 							text-align: left;
 						}
@@ -215,8 +234,9 @@
 						}
 						p {
 							
-							font-size: 15px;
+							font-size: $FontSize-Info;
 							text-transform: uppercase;
+							font-weight: 600;
 						}
 					}
 				}				

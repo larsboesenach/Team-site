@@ -22,10 +22,10 @@ $letter-sp-1: 1.1px;
 
 // Overall Colors
 $black: 		#4a4a4c;
-$blue-1: 		#0085B4;// dark-bg-blue
-$blue-2:		#00C0FF;// sidebar-log-blue
-$blue-3:    #89E1FF;// sidebar-goal-blue
-$purple:    #36216A;// color-from-logo
+$blue-1:		#24BFDD;// sidebar-goal-blue
+$blue-2:    #75D3EB;// sidebar-week-blue
+$blue-3:    #20B6D3;// Sidebar-averageBG-blue
+$font-col:  #000915;// color-from-logo
 $red:       #F92A08;
 $green:     #00FF75;
 
@@ -39,6 +39,7 @@ $grey-bg3:    #FCFCFC;
 $box-shadow:    0px 4px 10px -7px rgba(0, 0, 0, 0.35);
 $box-shadow2:   2px 0px 5px rgba(0, 0, 0, 0.2);
 $box-shadow3:   0px 10px 10px -7px rgba(0, 0, 0, 0.35);
+$box-shadow4:   0px 10px 10px -7px rgba(0, 0, 0, 0.25);//Circle shadow
 //----------------------
 
 // Easing mixins
@@ -62,7 +63,7 @@ $box-shadow3:   0px 10px 10px -7px rgba(0, 0, 0, 0.35);
 a,p,
 h1,h2,h3,
 h4,h5,h6 {
-	color: $black;
+	color: $font-col;
 	font-family: $font;
   letter-spacing: $letter-sp-1;
 }
@@ -72,7 +73,7 @@ a {
 }
 
 html {
-  background-color: $blue-1;
+  //background-color: $blue-1;
 }
 
 

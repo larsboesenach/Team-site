@@ -20,7 +20,8 @@
 **************************************************/
 a, p,
 h1, h2, h3,
-h4, h5, h6 {
+h4, h5, h6,
+input {
   color: #013D48;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1.1px; }
@@ -490,6 +491,7 @@ html, body {
     left: 50px;
     right: 50px;
     overflow: hidden;
+    position: fixed;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease; }
@@ -523,6 +525,7 @@ html, body {
   bottom: 50px;
   left: 50px;
   width: 450px;
+  overflow: scroll;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease; }
@@ -538,28 +541,9 @@ html, body {
     font-weight: 200; }
   .UserSidebar-wrap .UserSidebar-button.goal {
     margin-top: 100px; }
-  .UserSidebar-wrap .UserSidebar-button p {
-    background-color: #007990;
-    padding: 15px;
-    cursor: pointer;
-    color: white;
-    font-weight: 200;
-    text-transform: uppercase;
-    border-radius: 100px;
-    text-align: center;
-    box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.25);
-    margin: 15px 80px;
-    display: block;
-    font-size: 18px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #007990;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease; }
   .UserSidebar-wrap .UserLogout-wrap {
     background-color: #20B6D3;
-    position: fixed;
+    position: absolute;
     bottom: 50px;
     left: 50px;
     width: 450px;
@@ -568,12 +552,44 @@ html, body {
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease; }
 
+.UserSettings-button.update p,
+.UserSidebar-button p {
+  background-color: #007990;
+  padding: 15px;
+  cursor: pointer;
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+  border-radius: 100px;
+  text-align: center;
+  box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.25);
+  margin: 15px 80px;
+  display: block;
+  font-size: 18px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #007990;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease; }
+
+.UserSettings-button.update {
+  background-color: #F7F7F7;
+  padding: 20px;
+  text-align: center; }
+  .UserSettings-button.update p {
+    background-color: #22C0DE;
+    border-color: #22C0DE;
+    display: inline-block;
+    padding: 15px 80px; }
+
 .User-content {
   width: 100%;
   height: 100%;
-  padding-left: 450px;
   position: relative;
-  z-index: 200; }
+  z-index: 200;
+  overflow: scroll;
+  padding-left: 450px; }
   .User-content .UserClose-button {
     display: block;
     width: 200px;
@@ -598,6 +614,27 @@ html, body {
       margin-top: -5px; }
     .User-content .UserClose-button:hover {
       opacity: 0.6; }
+  .User-content .Content {
+    display: block;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 150px 30px 50px; }
+    .User-content .Content .Title h2 {
+      text-transform: uppercase;
+      font-size: 22px;
+      padding-bottom: 35px; }
+    .User-content .Content .Input-item p {
+      color: #013D48;
+      font-size: 14px;
+      margin-top: 30px; }
+    .User-content .Content .Input-item input {
+      font-size: 14px;
+      background-color: #F6FAFB;
+      width: 100%;
+      border: 0px solid white;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      position: relative; }
 
 .UserSettings.show.Settings-active .UserSidebar-button.settings p {
   border-color: white;
@@ -605,6 +642,10 @@ html, body {
 .UserSettings.show.Settings-active .UserSidebar-button.goal p:hover {
   background-color: #0097B4;
   border-color: #0097B4; }
+.UserSettings.show.Settings-active .User-content.goal {
+  display: none; }
+.UserSettings.show.Settings-active .User-content.settings {
+  display: block; }
 
 .UserSettings.show.Goal-active .UserSidebar-button.goal p {
   border-color: white;
@@ -612,5 +653,9 @@ html, body {
 .UserSettings.show.Goal-active .UserSidebar-button.settings p:hover {
   background-color: #0097B4;
   border-color: #0097B4; }
+.UserSettings.show.Goal-active .User-content.goal {
+  display: block; }
+.UserSettings.show.Goal-active .User-content.settings {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

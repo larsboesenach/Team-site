@@ -12,6 +12,7 @@ $font: 			  'Open Sans', sans-serif;
 $FontSize-Counter:  22px;
 $FontSize-Titels:   18px;
 $FontSize-Info:     16px;
+$FontSize-Text:     14px;
 $FontSize-Subtext:  12px;
 $FontSize-SubInfo:   8px;
 //-----------------------
@@ -25,7 +26,8 @@ $black: 		#4a4a4c;
 $blue-1:		#22C0DE;// sidebar-goal-blue
 $blue-2:    #76D4E9;// sidebar-week-blue
 $blue-3:    #20B6D3;// Sidebar-averageBG-blue
-$blue-4:    #007990;
+$blue-4:    #007990;// SettingsButton-hover
+$blue-5:    #F6FAFB;// input-field
 
 $font-col:  #013D48;// color-from-logo
 $red:       #F92A08;
@@ -76,7 +78,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5df', end
 // Settings
 a,p,
 h1,h2,h3,
-h4,h5,h6 {
+h4,h5,h6,
+input {
 	color: $font-col;
 	font-family: $font;
   letter-spacing: $letter-sp-1;

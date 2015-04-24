@@ -180,7 +180,10 @@
 				font-size: $FontSize-Text;
 				margin-top: 30px;
 			}
-			input {
+			span {
+				opacity: 0.3;
+			}
+			input,select {
 				font-size: $FontSize-Text;
 				background-color: $blue-5;
 				width: 100%;
@@ -189,12 +192,21 @@
 				margin-bottom: 15px;
 				position: relative;
 			}
+
+			select {
+				padding: 9px 20px;
+				option {
+					padding: 5px;
+				}
+			}
 		}
 	}
 
 	input {
+		outline: none;
 
 	}
+	
 }//user-content
 
 

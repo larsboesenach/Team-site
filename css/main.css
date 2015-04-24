@@ -21,7 +21,8 @@
 a, p,
 h1, h2, h3,
 h4, h5, h6,
-input {
+input, span,
+select {
   color: #013D48;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1.1px; }
@@ -627,7 +628,9 @@ html, body {
       color: #013D48;
       font-size: 14px;
       margin-top: 30px; }
-    .User-content .Content .Input-item input {
+    .User-content .Content .Input-item span {
+      opacity: 0.3; }
+    .User-content .Content .Input-item input, .User-content .Content .Input-item select {
       font-size: 14px;
       background-color: #F6FAFB;
       width: 100%;
@@ -635,6 +638,12 @@ html, body {
       padding: 15px 20px;
       margin-bottom: 15px;
       position: relative; }
+    .User-content .Content .Input-item select {
+      padding: 9px 20px; }
+      .User-content .Content .Input-item select option {
+        padding: 5px; }
+  .User-content input {
+    outline: none; }
 
 .UserSettings.show.Settings-active .UserSidebar-button.settings p {
   border-color: white;
@@ -657,5 +666,41 @@ html, body {
   display: block; }
 .UserSettings.show.Goal-active .User-content.settings {
   display: none; }
+
+.User-content label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 80px;
+  margin-top: 15px;
+  font-size: 13px; }
+  .User-content label span {
+    position: absolute;
+    top: 3px;
+    left: 30px;
+    opacity: 1 !important; }
+.User-content input[type=radio] {
+  display: none; }
+.User-content label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #F7F7F7;
+  box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(0, 0, 0, 0.015); }
+.User-content .radio label:before {
+  border-radius: 8px; }
+.User-content input[type=radio]:checked + label:before {
+  content: "\2022";
+  color: #22C0DE;
+  font-size: 30px;
+  text-align: center;
+  line-height: 15px; }
 
 /*# sourceMappingURL=main.css.map */

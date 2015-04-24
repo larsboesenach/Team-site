@@ -46,8 +46,8 @@
 
 				<div class="Input-item">
 					<p>Change password</p>
-					<input class="check" placeholder="Current password">
-					<input class="check" placeholder="New password">
+					<input type="password" class="check pass" placeholder="Current password">
+					<input type="password" class="check pass" placeholder="New password">
 				</div>
 			</div>
 
@@ -68,31 +68,50 @@
 				
 				<div class="Input-item">
 					<p>Please select gender</p>
-					<input class="check" placeholder="gender">
+			
+					<div class="radio">
+						<input id="male" type="radio" name="gender" value="male">
+						<label for="male"><span>Male</span></label>
+						
+						<input id="female" type="radio" name="gender" value="female">
+						<label for="female"><span>Female</span></label>
+					</div>
+
 				</div>
 
 				<div class="Input-item">
-					<p>Fill in your weight in kg</p>
+					<p>Fill in your weight <span>in kg</span></p>
 					<input class="check" placeholder="0kg">
 				</div>
 
 				<div class="Input-item">
-					<p>Fill in height in meters</p>
+					<p>Fill in height <span>in meters</span></p>
 					<input class="check" placeholder="Current password">
 				</div>
 
 				<div class="Input-item">
-					<p>Activity based on a regular day</p>
-					<input class="check" placeholder="Current password">
+					<p>Activity <span>based on a regular day</span></p>
+					
+					<select>
+						<option value="non-active">non active (500kcal)</option>
+						<option value="small">small amount</option>
+						<option value="medium">medium amount</option>
+						<option value="large">large amount</option>
+					</select>
 				</div>
 
 				<div class="Input-item">
-					<p>Activity your goal</p>
-					<input class="check" placeholder="Current password">
+					<p>Activity <span>your goal</span></p>
+					
+					<select>
+						<option value="lose-weight">lose weight</option>
+						<option value="average">average</option>
+						<option value="gain">gain weight</option>
+					</select>
 				</div>
 
 				<div class="Input-item">
-					<p>Your goal</p>
+					<p>Your goal <span>calculated for you</span></p>
 					<input class="check" placeholder="2500 kcal">
 				</div>
 			</div>

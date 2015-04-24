@@ -79,7 +79,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5df', end
 a,p,
 h1,h2,h3,
 h4,h5,h6,
-input {
+input,span,
+select {
 	color: $font-col;
 	font-family: $font;
   letter-spacing: $letter-sp-1;

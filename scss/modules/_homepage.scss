@@ -181,7 +181,7 @@
 		}
 
 		.Entry-emptyspace.open {
-			height: 80px;
+			height: 160px;
 		}
 
 		.Entry-make-new-entry {
@@ -211,7 +211,7 @@
 			}
 		}
 		.Entry-make-new-entry.enlargeBotPad {
-			padding-bottom: 101px;
+			padding-bottom: 190px;
 		}
 
 		.Entry-input-form {
@@ -226,19 +226,78 @@
 			background-color: $grey-bg3;
 			padding: 0 60px;
 
-			td {
-				input {
-					padding: 3px;
-				}
-
+			td input {
+				padding: 3px;
 			}
-
 
 			@include easing-mixin-2;
 		}
 		.Entry-input-form.open {
 			visibility: visible;
-			//height: 150px;
+			height: 190px;
+		}
+
+		.Make-entry-content {
+			p {
+				font-size: $FontSize-Subtext;
+			}
+			.radio {
+				padding: 10px 0 25px;
+				display: inline-block;
+			}
+
+			.show {
+				display: inherit !important;
+			}
+
+			.intake-field {
+				input {
+					width: 100%;
+					border: 0px solid;
+					padding: 10px 15px;
+					background-color: $grey-bg2;
+				}
+				.amount {
+					width: 20%;
+					min-width: 80px;
+					padding-right: 20px;
+				}
+				.prodname {
+					width: 60%;
+					padding-right: 20px;
+				}
+				.calories {
+					width: 20%;
+					min-width: 80px;
+				}
+			}
+
+			.exercise-field {
+				input {
+					width: 100%;
+					border: 0px solid;
+					padding: 10px 15px;
+					background-color: $grey-bg2;
+				}
+				.intensity {
+					padding-right: 20px;
+					width: 15%;
+					min-width: 90px;
+				}
+				.time {
+					padding-right: 20px;
+					width: 15%;
+					min-width: 90px;
+				}
+				.workout {
+					padding-right: 20px;
+					width: 55%;
+				}
+				.calories {
+					width: 15%;
+					min-width: 80px;
+				}
+			}
 		}
 	}// content-entry
 }// sidebar-fixx

@@ -47,6 +47,20 @@ $(document).ready(function() {
 
 	// - - - - - - - - - - - - -
 
+	$('#intake').on('click', function() {// Goal button
+		$('.exercise-field').addClass('hidden'),
+		$('.intake-field').addClass('show'),
+		$('.exercise-field').removeClass('show'),
+		$('.intake-field').removeClass('hidden');
+	});
+
+	$('#exercise').on('click', function() {// Goal button
+		$('.exercise-field').addClass('show'),
+		$('.intake-field').addClass('hidden'),
+		$('.exercise-field').removeClass('hidden'),
+		$('.intake-field').removeClass('show');
+	});
+
 
 //	$("#Gotobottomofpage").animate({ scrollTop: $(document).height() }, "slow");	
 });

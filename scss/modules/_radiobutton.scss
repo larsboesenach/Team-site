@@ -1,5 +1,6 @@
 
-.User-content {
+.User-content,
+.Make-entry-content {
 	label {
 		display: inline-block;
 		cursor: pointer;
@@ -45,5 +46,12 @@
 	    font-size: 30px;
 	    text-align: center;
 	    line-height: 15px;
+	}
+}
+
+
+.Make-entry-content {
+	label:before {
+		background-color: white;
 	}
 }

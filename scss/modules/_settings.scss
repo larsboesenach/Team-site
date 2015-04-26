@@ -94,6 +94,23 @@ html {
 
 }
 
+input {
+  outline: none !important;
+}
+
+.Uppercase {
+  text-transform: uppercase;
+  p,a,span {
+    text-transform: uppercase;
+  }
+}
+
+.text-center {
+  text-align: center;
+  p,a,span {
+    text-align: center;
+  }
+}
 
 
 

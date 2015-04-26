@@ -104,7 +104,7 @@
 					<p>Activity <span>your goal</span></p>
 					
 					<select>
-						<option value="lose-weight">lose weight</option>
+						<option value="lose-weight"><p>lose weight</p></option>
 						<option value="average">average</option>
 						<option value="gain">gain weight</option>
 					</select>

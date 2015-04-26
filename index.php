@@ -21,7 +21,7 @@
 <div class="SidebarFix">	
 	<div class="Content-wrap">
 		<?php include('includes/UserSettings.php'); ?>
-		
+
 		<div class="Top-bar">
 			<div class="Topbar-Logo">
 				<a href="#">
@@ -121,30 +121,52 @@
 				<div class="Entry-emptyspace"></div>
 
 				<div class="Entry-make-new-entry">
-					<p>Update goal</p>
+					<p>Make a new entry</p>
 				</div>
 
 				<div class="Entry-input-form">
-					<table>
-						<tr>
-							<td>consume</td>
-							<td>exercize</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="consume" value="consume"></td>
-							<td><input type="checkbox" name="exercise" value="exercise"></td>
-						</tr>
-						<tr>
-							<td>amount</td>
-							<td>prod. name</td>
-							<td>calories</td>
-						</tr>
-						<tr>
-							<td><input type="text"></td>
-							<td><input type="text"></td>
-							<td><input type="text"></td>
-						</tr>
-					</table>
+					<div class="Make-entry-content">
+						
+						<div class="text-center">
+							<div class="radio">
+								<input id="intake" type="radio" name="IntOrEx" value="intake">
+								<label for="intake"><span>Intake</span></label>
+								
+								<input id="exercise" type="radio" name="IntOrEx" value="exercise">
+								<label for="exercise"><span>Exercise</span></label>
+							</div>
+						</div>
+
+						<table>							
+							<tr class="intake-field show Uppercase">
+								<td><p>amount</p></td>
+								<td><p>prod. name</p></td>
+								<td><p>calories</p></td>
+							</tr>
+
+							<tr class="intake-field show">
+								<td class="amount"><input placeholder="2x" type="text"></td>
+								<td class="prodname"><input placeholder="pizza" type="text"></td>
+								<td class="calories"><input placeholder="1000" type="text"></td>
+							</tr>
+						</table>
+
+						<table>
+							<tr class="exercise-field hidden Uppercase">
+								<td><p>intensity</p></td>
+								<td><p>time</p></td>
+								<td><p>workout name</p></td>
+								<td><p>calories</p></td>
+							</tr>
+
+							<tr class="exercise-field hidden">
+								<td class="intensity"><input placeholder="hard" type="text"></td>
+								<td class="time"><input placeholder="0.5h" type="text"></td>
+								<td class="workout"><input placeholder="running" type="text"></td>
+								<td class="calories"><input placeholder="250" type="text"></td>
+							</tr>
+						</table>
+					</div>
 				</div>
 
 			</div>

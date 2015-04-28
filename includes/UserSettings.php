@@ -36,17 +36,17 @@
 				
 				<div class="Input-item">
 					<p>Change user name</p>
-					<input class="check" placeholder="Name">
+					<input class="check" type="text" placeholder="Name" required>
 				</div>
 
 				<div class="Input-item">
 					<p>Change email adress</p>
-					<input class="check" placeholder="Email">
+					<input class="check" type="email" placeholder="Email" required>
 				</div>
 
 				<div class="Input-item">
 					<p>Change password</p>
-					<input type="password" class="check pass" placeholder="Current password">
+					<input type="password" class="check pass" placeholder="Current password" required>
 					<input type="password" class="check pass" placeholder="New password">
 				</div>
 			</div>

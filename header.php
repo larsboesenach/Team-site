@@ -6,7 +6,7 @@
 	
 	<!-- jQuery link -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	
+	<script rel="text/javascript" src="js/custom-js.js"></script>
 	<!-- -------------- -->
 	<!-- Bootstrap	-->
 	<!-- Latest compiled and minified CSS -->

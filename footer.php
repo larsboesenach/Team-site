@@ -10,7 +10,7 @@
 	</footer>
 	
 	<!-- JavaScripts -->
-	<script rel="text/javascript" src="js/custom-js.js"></script>
+
 
 </body>
 </html>

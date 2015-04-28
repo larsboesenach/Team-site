@@ -69,16 +69,15 @@
 	}
 }
 
+.SIGNIN-button.login {
+	display: none;
+}
 
 // -------------------------- //
 //	-------  Header  -------  //
 
-
 .Header-wrap {
 	background-color: $blue-2;
-	background-image: url('../img/bgimg-run.jpg');
-	background-size: cover;
-	background-position: center center;
 	position: relative;
 	z-index: 5;
 
@@ -134,6 +133,25 @@
 }
 
 
+
+.Header-wrap.login {
+	.Header-box {
+		padding-bottom: 120px;
+		margin: 50px auto;
+		overflow: scroll;
+
+		.Input-item {
+			input {
+				margin-bottom: 15px;
+			}
+		}
+
+		.button-wrap {
+			height: 105px;
+		}
+	}
+}
+
 .registerpage {
 	.Nav-wrap {
 		position: relative;
@@ -182,7 +200,7 @@
 		.button-wrap {
 			height: 130px;
 
-			p {
+			p,input {
 				cursor: pointer;
 				display: inline-block;
 				margin: 0;
@@ -197,6 +215,7 @@
 				font-size: 18px;
 				outline: none;
 				font-weight: 200;
+				border: 0px solid;
 				@include easing-mixin-1;
 
 				&:hover {
@@ -229,5 +248,16 @@
 	.show {
 		display: block;
 	}
+}
+
+
+.registerpage.login {
+	.SIGNIN-button {
+		display: none;
+	}
+	.SIGNIN-button.login {
+		display: block;
+	}
+
 }
 

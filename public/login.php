@@ -32,18 +32,31 @@ if (isset($_POST['submit'])) {
 };
 
 ?>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <title>countr.cc || <?php echo $_SESSION['username'] ?></title>
 
-  <title>inloggen</title>
-  <meta name="description" content="loginpage in php">
-  <meta name="author" content="hansjan">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script rel="text/javascript" src="js/custom-js.js"></script>
+  <script type="text/javascript" src="js/ajax.js"></script>
 
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <!-- Bootstrap  -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- -------------- --> 
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,400italic' rel='stylesheet' type='text/css'> 
+
 </head>
-
 <body>
 
 <?php if (isset($message)){
@@ -53,20 +66,52 @@ if (isset($_POST['submit'])) {
     if (isset($_SESSION['ingelogd'])) {
   echo " status: ingelogd<br> ";
   } else {
-  echo " status: niet ingelogd";
+  
   }
 
   //print_r($result);
 
 ?>
-  
-<form action="login.php" method="post">
-  username:
-  <input type="text" name="username" value="<?php if(isset($username)){echo $username;}; ?>"><br>
-  password: 
-  <input type="password" name="password" value=""><br>
-  <input type="submit" name="submit" value="submit">
-</form>
+
+<div class="registerpage login">
+<!-- ------------------ -->
+<?php include('../include/CCnavigation.php'); ?>
+<!-- ------------------ -->
+
+
+
+<div class="Header-wrap login">
+    <div class="container">
+
+        <div class="Header-box">
+            <div class="Register-content show">
+                <p class="strongtitle">Login</p>
+
+                <form action="login.php" method="post">
+                    <div class="fields">
+                        <p>username:</p>
+                        <div class="Input-item">
+                            <input type="text" name="username" value="<?php if(isset($username)){echo $username;}; ?>"><br>
+                        </div>
+
+                        <p>password:</p>
+
+                        <div class="Input-item">
+                            <input type="password" name="password" value=""><br>
+                        </div>
+
+                        <div class="button-wrap" id="continue">
+                            <input type="submit" name="submit" value="submit">
+                        </div>
+                    </div><!-- fields -->
+                </form>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+
 
 <a href="register.php"> registreer een account </a>
 

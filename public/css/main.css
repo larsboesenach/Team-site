@@ -840,11 +840,11 @@ html, body {
       background-color: white;
       color: #22C0DE; }
 
+.SIGNIN-button.login {
+  display: none; }
+
 .Header-wrap {
   background-color: #76D4E9;
-  background-image: url("../img/bgimg-run.jpg");
-  background-size: cover;
-  background-position: center center;
   position: relative;
   z-index: 5; }
   .Header-wrap .Header-box {
@@ -888,6 +888,15 @@ html, body {
         .Header-wrap .Header-box .button-wrap a:hover {
           background-color: #008eaa; }
 
+.Header-wrap.login .Header-box {
+  padding-bottom: 120px;
+  margin: 50px auto;
+  overflow: scroll; }
+  .Header-wrap.login .Header-box .Input-item input {
+    margin-bottom: 15px; }
+  .Header-wrap.login .Header-box .button-wrap {
+    height: 105px; }
+
 .registerpage .Nav-wrap {
   position: relative;
   z-index: 10;
@@ -923,7 +932,7 @@ html, body {
   overflow: scroll; }
   .registerpage .Header-box .button-wrap {
     height: 130px; }
-    .registerpage .Header-box .button-wrap p {
+    .registerpage .Header-box .button-wrap p, .registerpage .Header-box .button-wrap input {
       cursor: pointer;
       display: inline-block;
       margin: 0;
@@ -938,10 +947,11 @@ html, body {
       font-size: 18px;
       outline: none;
       font-weight: 200;
+      border: 0px solid;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease; }
-      .registerpage .Header-box .button-wrap p:hover {
+      .registerpage .Header-box .button-wrap p:hover, .registerpage .Header-box .button-wrap input:hover {
         background-color: #008eaa; }
     .registerpage .Header-box .button-wrap ul.dots {
       margin: 12px 0;
@@ -961,6 +971,11 @@ html, body {
 .registerpage .hidden {
   display: none; }
 .registerpage .show {
+  display: block; }
+
+.registerpage.login .SIGNIN-button {
+  display: none; }
+.registerpage.login .SIGNIN-button.login {
   display: block; }
 
 .Content-entry.greyBG {

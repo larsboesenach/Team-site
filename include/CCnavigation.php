@@ -15,9 +15,12 @@
 		
 		
 		<div class="SIGNIN-button">
-			<a href="#">Sign in</a>
+			<a href="login.php">Sign in</a>
 		</div>
-	
+		
+		<div class="SIGNIN-button login">
+			<a href="register.php">Register</a>
+		</div>
 
 	</div><!-- container -->
 </div>

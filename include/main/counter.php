@@ -1,11 +1,11 @@
 <script src="js/circle-progress.js"></script>
 
 <?php
-
+$logtime = gettime();
     $goal = 2500;
-    $count = 1250;
+    $count = totalcalories($logtime['utctimestamp'], $_SESSION['userid']);
     $countervalue = $count / $goal;
-
+$distance = $goal - $count; 
 ?>
 
 <div class="Circle-aligncenter">
@@ -25,8 +25,8 @@
 </div>
 
 <div class="Circle-progress-text">
-    <h2>Progress</h2>
-    <p><span class="kcal-from-goal">880 kcal</span> removed from goal</p>
+    <h2>Today's progress</h2>
+    <p><span class="kcal-from-goal"><?php echo $distance ?> kcal</span> away from your goal</p>
     
 </div>
 

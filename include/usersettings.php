@@ -1,4 +1,3 @@
-
 <div class="UserSettings">
 	<div class="Settings-bg">
 		
@@ -18,9 +17,10 @@
 			</div>
 
 			<div class="UserLogout-wrap">
-				<div class="UserSidebar-button logout">
+				<a href="logout.php"> <div class="UserSidebar-button logout">
 					<p>Logout</p>
 				</div>
+				</a>
 			</div>
 
 		</div>

@@ -1,4 +1,30 @@
-<?php include('header.php'); ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Team project website</title>
+	
+	<!-- jQuery link -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script rel="text/javascript" src="js/custom-js.js"></script>
+	<!-- -------------- -->
+	<!-- Bootstrap	-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<!-- -------------- -->	
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="css/main.css" />
+
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,400italic' rel='stylesheet' type='text/css'> 
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
 <!-- ---------------------- -->
 <!-- The head closes here on this page -->
 
@@ -8,7 +34,29 @@
 <body>
 
 <!-- ------------------ -->
-<?php include('includes/CCnavigation.php'); ?>
+<div class="Nav-wrap">
+	<div class="container">
+		
+		<a href="index.php">
+			<div class="Logo-wrap">
+				<div class="CC-img">
+					<img src="img/CC_white.svg">
+				</div>
+
+				<div class="CC-text">
+					<p>CalorieCountr</p>
+				</div>
+			</div>
+		</a>
+		
+		
+		<div class="SIGNIN-button">
+			<a href="login.php">Sign in</a>
+		</div>
+	
+
+	</div><!-- container -->
+</div>
 <!-- ------------------ -->
 
 <div class="homepage">

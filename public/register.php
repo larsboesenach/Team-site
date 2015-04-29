@@ -42,15 +42,15 @@
 
 				<div class="fields">
 					<div class="Input-item">
-						<input class="check" placeholder="Your username">
+						<input class="check register-form" placeholder="Your username">
 					</div>
 
 					<div class="Input-item">
-						<input class="check" placeholder="Your email">
+						<input class="check register-form" placeholder="Your email">
 					</div>
 
 					<div class="Input-item">
-						<input type="password" class="check pass" placeholder="A password">
+						<input type="password" class="check pass register-form" placeholder="A password">
 					</div>
 				</div>
 				
@@ -70,11 +70,11 @@
 
 				<div class="fields">
 					<div class="Input-item">
-						<input class="check" placeholder="Your height in meters">
+						<input class="check register-form" placeholder="Your height in meters">
 					</div>
 
 					<div class="Input-item">
-						<input class="check" placeholder="Your weight in kilos">
+						<input class="check register-form" placeholder="Your weight in kilos">
 					</div>
 				</div>
 				

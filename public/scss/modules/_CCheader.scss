@@ -42,7 +42,7 @@
 	display: inline-block;
 	float: right;
 	a {
-		font-size: 10pt;
+		font-size: $FontSize-Text;
 		display: inline-block;
 		text-align: right;
 		margin: 0;
@@ -116,9 +116,8 @@
 				text-align: center;
 				text-transform: uppercase;
 				padding: 5px 30px;
-				font-size: 18px;
+				font-size: $FontSize-Text;
 				outline: none;
-				font-weight: 200;
 				@include easing-mixin-1;
 
 				&:hover {
@@ -143,6 +142,9 @@
 		right: 	0px;
 		top: 	80px;
 	}
+	.SIGNIN-button {
+		display: none;
+	}
 	.SIGNIN-button.login {
 		display: none;
 	}
@@ -151,19 +153,19 @@
 		.Input-item {
 			p {
 				color: $font-col;
-				font-size: 14px;
+				font-size: $FontSize-Text;
 				margin-top: 30px;
 			}
 			span {
 				opacity: 0.3;
 			}
 			input,select {
-				font-size: 14px;
+				font-size: $FontSize-Text;
 				background-color: $blue-5;
 				width: 100%;
 				color: $font-col;
 				letter-spacing: 1.1px;
-				border: 0px solid white;
+				border: 2px solid transparent;
 				padding: 15px 20px;
 				margin-bottom: 35px;
 				position: relative;
@@ -173,10 +175,10 @@
 	}
 
 	.Header-box {
-		padding-bottom: 140px;
+		padding-bottom: 110px;
 		margin: 50px auto;
 		.button-wrap {
-			height: 130px;
+			height: 105px;
 
 			p, input {
 				cursor: pointer;
@@ -190,9 +192,8 @@
 				text-align: center;
 				text-transform: uppercase;
 				padding: 5px 50px;
-				font-size: 18px;
+				font-size: $FontSize-Text;
 				outline: none;
-				font-weight: 200;
 				border: 0px solid;
 				@include easing-mixin-1;
 

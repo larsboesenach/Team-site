@@ -199,9 +199,8 @@ html, body {
         display: block;
         height: 25px;
         float: left; }
-      .Homepage .SidebarFix .Top-bar .Topbar-Logo p {
+      .Homepage .SidebarFix .Top-bar .Topbar-Logo a {
         display: inline-block;
-        text-transform: uppercase;
         color: #013D48;
         font-size: 18px;
         letter-spacing: 1.1px;
@@ -894,7 +893,7 @@ html, body {
   display: inline-block;
   float: right; }
   .SIGNIN-button a {
-    font-size: 10pt;
+    font-size: 14px;
     display: inline-block;
     text-align: right;
     margin: 0;
@@ -950,9 +949,8 @@ html, body {
         text-align: center;
         text-transform: uppercase;
         padding: 5px 30px;
-        font-size: 18px;
+        font-size: 14px;
         outline: none;
-        font-weight: 200;
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
         -o-transition: all 0.2s ease; }
@@ -969,6 +967,8 @@ html, body {
   left: 0px;
   right: 0px;
   top: 80px; }
+.registerpage .SIGNIN-button {
+  display: none; }
 .registerpage .SIGNIN-button.login {
   display: none; }
 .registerpage .fields {
@@ -985,15 +985,15 @@ html, body {
     width: 100%;
     color: #013D48;
     letter-spacing: 1.1px;
-    border: 0px solid white;
+    border: 2px solid transparent;
     padding: 15px 20px;
     margin-bottom: 35px;
     position: relative; }
 .registerpage .Header-box {
-  padding-bottom: 140px;
+  padding-bottom: 110px;
   margin: 50px auto; }
   .registerpage .Header-box .button-wrap {
-    height: 130px; }
+    height: 105px; }
     .registerpage .Header-box .button-wrap p, .registerpage .Header-box .button-wrap input {
       cursor: pointer;
       display: inline-block;
@@ -1006,9 +1006,8 @@ html, body {
       text-align: center;
       text-transform: uppercase;
       padding: 5px 50px;
-      font-size: 18px;
+      font-size: 14px;
       outline: none;
-      font-weight: 200;
       border: 0px solid;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;

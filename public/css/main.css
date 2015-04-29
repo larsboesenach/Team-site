@@ -974,22 +974,34 @@ html, body {
   display: none; }
 .registerpage .fields {
   padding-top: 20px; }
-  .registerpage .fields .Input-item p {
-    color: #013D48;
-    font-size: 14px;
-    margin-top: 30px; }
-  .registerpage .fields .Input-item span {
-    opacity: 0.3; }
-  .registerpage .fields .Input-item input, .registerpage .fields .Input-item select {
-    font-size: 14px;
-    background-color: #F6FAFB;
-    width: 100%;
-    color: #013D48;
-    letter-spacing: 1.1px;
-    border: 2px solid transparent;
-    padding: 15px 20px;
-    margin-bottom: 35px;
+  .registerpage .fields .Input-item {
     position: relative; }
+    .registerpage .fields .Input-item p {
+      color: #013D48;
+      font-size: 14px;
+      margin-top: 30px; }
+    .registerpage .fields .Input-item span {
+      opacity: 0.3; }
+    .registerpage .fields .Input-item input, .registerpage .fields .Input-item select {
+      font-size: 14px;
+      background-color: #F6FAFB;
+      width: 100%;
+      color: #013D48;
+      letter-spacing: 1.1px;
+      border: 2px solid transparent;
+      padding: 15px 20px;
+      margin-bottom: 35px;
+      position: relative; }
+    .registerpage .fields .Input-item img {
+      max-width: 15px;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease; }
 .registerpage .Header-box {
   padding-bottom: 110px;
   margin: 50px auto; }
@@ -1056,6 +1068,9 @@ html, body {
 
 .invalid .register-form {
   border: 2px solid #FC3845 !important; }
+.invalid img {
+  visibility: visible !important;
+  opacity: 1 !important; }
 
 .Content-entry.greyBG {
   background-color: #EEEEEE; }

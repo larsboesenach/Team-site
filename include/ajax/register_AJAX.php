@@ -65,14 +65,17 @@ $message = "";
 				<div class="fields">
 					<div class="Input-item <?php if (!empty($namefeedback)){echo 'invalid';} ?>">
 						<input class="check register-form form-name" <?php if (!empty($username)){ echo 'value="' . $username;}else {echo 'placeholder="Your username';} ?>">
+						<img src="img/red_kruisje-2.svg">
 					</div>
 
 					<div class="Input-item <?php if (!empty($emailfeedback)){echo 'invalid';} ?>">
 						<input class="check register-form form-email" <?php if (!empty($email)){echo'value="' . $email;}else{echo 'placeholder="Your email';} ?>">
+						<img src="img/red_kruisje-2.svg">
 					</div>
 
 					<div class="Input-item <?php if (!empty($passwordfeedback)){echo 'invalid';} ?>">
 						<input type="password" class="check pass register-form form-pass" placeholder="A password">
+						<img src="img/red_kruisje-2.svg">
 					</div>
 				</div>
 				

@@ -151,6 +151,7 @@
 	.fields {
 		padding-top: 20px;
 		.Input-item {
+			position: relative;
 			p {
 				color: $font-col;
 				font-size: $FontSize-Text;
@@ -169,6 +170,15 @@
 				padding: 15px 20px;
 				margin-bottom: 35px;
 				position: relative;
+			}
+			img {
+				max-width: 15px;
+				position: absolute;
+				top: 	16px;
+				right: 	16px;
+				visibility: hidden;
+				opacity: 0;
+				@include easing-mixin-1
 			}
 		}
 
@@ -263,8 +273,14 @@
 }
 
 
+
+
 .invalid {
 	.register-form {
 		border: 2px solid $red !important;
+	}
+	img {
+		visibility: visible !important;
+		opacity: 1 !important;
 	}
 }

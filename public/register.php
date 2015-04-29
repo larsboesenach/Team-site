@@ -43,14 +43,17 @@
 				<div class="fields">
 					<div class="Input-item">
 						<input class="check register-form form-name" placeholder="Your username">
+						<img src="img/red_kruisje-2.svg">
 					</div>
 
 					<div class="Input-item">
 						<input class="check register-form form-email" placeholder="Your email">
+						<img src="img/red_kruisje-2.svg">
 					</div>
 
 					<div class="Input-item">
 						<input type="password" class="check pass register-form form-pass" placeholder="A password">
+						<img src="img/red_kruisje-2.svg">
 					</div>
 				</div>
 				

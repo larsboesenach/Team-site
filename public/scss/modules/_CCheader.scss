@@ -128,11 +128,6 @@
 	}
 }
 
-.invalid {
-	input {
-		border: 2px solid $red;
-	}
-}
 
 .registerpage {
 	.Nav-wrap {
@@ -270,3 +265,8 @@
 
 
 
+.input-item .invalid {
+	input {
+		border: 2px solid $red;
+	}
+}

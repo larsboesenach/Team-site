@@ -62,7 +62,7 @@
 
 <div class="homepage">
 
-<div class="Header-wrap" style data-parallax="scroll" data-image-src="img/bgimg-run.jpg">
+<div class="Header-wrap" style data-parallax="scroll" data-image-src="img/Header-bg.jpg">
 	<div class="container">
 	
 		<div class="Header-box">

@@ -41,18 +41,24 @@ $logtime = gettime();
   <!-- button -->
   <form class="log_add" timestamp="<?php echo time(); ?>" method="post">
 
- <div class="Add-Button" id="Add-Button"><p>+</p></div>
+<div class="Add-Button" id="Add-Button">
+    <div class="pos-relative">
+        <p>+</p>
+        <span>+</span>
+        <input type="submit" class="submit">
+    </div>
+</div>
 
   <div class="Entry-make-new-entry">
           <p>Make a new entry</p>
         </div>
-<input type="submit" value="submit" class="submit" style="position: absolute; bottom: 0; left: -10px; z-index: 9999; opacity: 0;">
+
         <div class="Entry-input-form">
           <div class="Make-entry-content">     
 
             <div class="text-center">
             <div class="radio">
-                  <input id="intake" type="radio" name="IntOrEx" value="intake">
+                  <input id="intake" type="radio" name="IntOrEx" value="intake" checked>
                 <label for="intake"><span>Intake</span></label>
                 
                 <input id="exercise" type="radio" name="IntOrEx" value="exercise">

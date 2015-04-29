@@ -33,13 +33,13 @@ $week_start = date('d-m-Y', $display_week_ts);
                 
                 <div class="Week-count">
                     <div class="week-count-rel">
-                        <input id="back_week" class="navigator left" type="submit" name="back_week" value="<" />
+                        <input id="back_week" class="navigator left" type="submit" name="back_week" value="" />
                         <input id="last_week" type="hidden" name="last_week" value="<? echo $week_start; ?>" />
 
                         <h2>Week <?php echo date('W', $display_week_ts); ?></h2>
                         <p>your goal</p>
                         
-                        <input id="add_week" class="navigator right" type="submit" name="add_week" value=">" />
+                        <input id="add_week" class="navigator right" type="submit" name="add_week" value="" />
                     </div>
                 </div>
 

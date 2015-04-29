@@ -155,6 +155,20 @@
 					
 					.week-count-rel {
 						position: relative;
+						
+						.navigator {
+							width: 30px;
+							height: 30px;
+							margin-top: 14px;
+							background-repeat: no-repeat;
+						}
+
+						.navigator.left {
+							background-image: url('../img/left_arrow-32.svg');
+						}
+						.navigator.right {
+							background-image: url('../img/right_arrow-33.svg');
+						}
 					}
 
 					.navigator {
@@ -244,3 +258,27 @@
 		}
 	}// Sidebar log wrap
 }
+
+
+.Set-goal-wrap {
+	background-color: white;
+	position: fixed;
+	top: 	0;
+	left: 	0;
+	right: 	0;
+	bottom: 0;
+	z-index: 1000;
+	opacity: 0.8;
+	@incude easing-mixin-2;
+
+	display: none;
+}
+
+.Homepage.new-goal {
+	.Set-goal-wrap {
+		display: block;
+	}
+
+
+}
+

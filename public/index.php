@@ -33,6 +33,9 @@
 <body>
 <div class="page-wrap">
   <div class="Homepage">
+    <div class="Set-goal-wrap">
+        
+    </div>
 
     <div class="Sidebar-wrap">
     <div class="Circle-wrap">

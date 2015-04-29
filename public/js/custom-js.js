@@ -65,28 +65,28 @@ $(document).ready(function() {
 
 	
 	
-	$('#continue p').on('click', function() {// Goal button
-		$('.Register-content').addClass('hidden'),
-		$('.Register-content').removeClass('show'),
-		$('.Setgoal-content').addClass('show'),
-		$('.Setgoal-content').removeClass('hidden');
-	});
+	// $('#continue p').on('click', function() {// Goal button
+	// 	$('.Register-content').addClass('hidden'),
+	// 	$('.Register-content').removeClass('show'),
+	// 	$('.Setgoal-content').addClass('show'),
+	// 	$('.Setgoal-content').removeClass('hidden');
+	// });
 
-	$('#finish p').on('click', function() {// Goal button
-		$('.Setgoal-content').addClass('hidden'),
-		$('.Setgoal-content').removeClass('show'),
-		$('.done-content').addClass('show'),
-		$('.done-content').removeClass('hidden');
-	});
+	// $('#finish p').on('click', function() {// Goal button
+	// 	$('.Setgoal-content').addClass('hidden'),
+	// 	$('.Setgoal-content').removeClass('show'),
+	// 	$('.done-content').addClass('show'),
+	// 	$('.done-content').removeClass('hidden');
+	// });
 
-	$('.dots li').on('click', function() {// Goal button
-		$('.Register-content').addClass('show'),
-		$('.Setgoal-content').addClass('hidden'),
-		$('.Setgoal-content').removeClass('show'),
-		$('.Register-content').removeClass('hidden'),
-		$('.done-content').addClass('hidden'),
-		$('.done-content').removeClass('show');
-	});
+	// $('.dots li').on('click', function() {// Goal button
+	// 	$('.Register-content').addClass('show'),
+	// 	$('.Setgoal-content').addClass('hidden'),
+	// 	$('.Setgoal-content').removeClass('show'),
+	// 	$('.Register-content').removeClass('hidden'),
+	// 	$('.done-content').addClass('hidden'),
+	// 	$('.done-content').removeClass('show');
+	// });
 
 
 //	$("#Gotobottomofpage").animate({ scrollTop: $(document).height() }, "slow");	

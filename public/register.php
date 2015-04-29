@@ -38,24 +38,24 @@
 		<div class="Header-box">
 			<div class="Register-content show">
 				<p class="strongtitle">Register</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo</p>
+				<p>Choose an username, and a safe password, your password should be at least 8 characters and has to contain a variation of numbers and letters.</p>
 
 				<div class="fields">
 					<div class="Input-item">
-						<input class="check register-form" placeholder="Your username">
+						<input class="check register-form form-name" placeholder="Your username">
 					</div>
 
 					<div class="Input-item">
-						<input class="check register-form" placeholder="Your email">
+						<input class="check register-form form-email" placeholder="Your email">
 					</div>
 
 					<div class="Input-item">
-						<input type="password" class="check pass register-form" placeholder="A password">
+						<input type="password" class="check pass register-form form-pass" placeholder="A password">
 					</div>
 				</div>
 				
 				<div class="button-wrap" id="continue">
-					<p>continue</p>
+					<p class="register-submit-1">continue</p>
 					<ul class="dots">
 						<li class="dot1 on"></li>
 						<li class="dot2"></li>

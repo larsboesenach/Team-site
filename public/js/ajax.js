@@ -54,4 +54,19 @@ $(document).ready(function(){
         });
        
     }); 
+
+ $(document).on('click', '.register-submit-1', function(){
+         $.post("../include/ajax/register_AJAX.php",
+        {
+           username: $('.form-name').val(),
+           password: $('.form-pass').val(),
+           email: $('.form-email').val(),
+        },
+        function(data,status){
+          var divs = data.split('----');
+          $('.Header-box').html(divs[0]);
+
+        });
+       
+    }); 
 }); //document.ready

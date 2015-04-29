@@ -110,15 +110,17 @@ input {
   }
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 .text-center {
   text-align: center;
   p,a,span {
     text-align: center;
   }
 }
-.text-align-right {
-  text-align: right;
-}
+
 
 .pos-relative {
   position: relative;

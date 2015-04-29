@@ -39,13 +39,13 @@ input {
   .Uppercase p, .Uppercase a, .Uppercase span {
     text-transform: uppercase; }
 
+.text-align-right {
+  text-align: right; }
+
 .text-center {
   text-align: center; }
   .text-center p, .text-center a, .text-center span {
     text-align: center; }
-
-.text-align-right {
-  text-align: right; }
 
 .pos-relative {
   position: relative; }
@@ -1004,10 +1004,6 @@ html, body {
 .registerpage .show {
   display: block; }
 
-.Home-circle-wrap {
-  padding: 30px 0;
-  display: inline-block; }
-
 .registerpage.login .SIGNIN-button {
   display: none; }
 .registerpage.login .SIGNIN-button.login {
@@ -1024,7 +1020,6 @@ html, body {
 
 .Header-wrap.login .Header-box .Input-item input {
   margin-bottom: 15px; }
-
 .Header-wrap.login .Header-box .button-wrap {
   height: 105px; }
 
@@ -1078,6 +1073,41 @@ p.strongtitle {
     margin: 0;
     margin-bottom: 5px; }
 
+.Home-circle-wrap {
+  padding: 30px 30px;
+  display: inline-block; }
+  .Home-circle-wrap .Circle-aligncenter {
+    max-width: 180px;
+    margin: 0px auto 0px; }
+    .Home-circle-wrap .Circle-aligncenter #circle {
+      position: relative;
+      box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.25);
+      border-radius: 100px;
+      height: 180px; }
+    .Home-circle-wrap .Circle-aligncenter .Circle-goal {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0; }
+      .Home-circle-wrap .Circle-aligncenter .Circle-goal p {
+        text-align: center;
+        font-size: 24px;
+        text-transform: uppercase; }
+        .Home-circle-wrap .Circle-aligncenter .Circle-goal p i {
+          display: none; }
+    .Home-circle-wrap .Circle-aligncenter .Circle-goal.top {
+      top: 55px; }
+    .Home-circle-wrap .Circle-aligncenter .Circle-goal.hr {
+      top: 77px;
+      text-align: center; }
+      .Home-circle-wrap .Circle-aligncenter .Circle-goal.hr .hr-- {
+        display: inline-block;
+        width: 70px;
+        height: 2px;
+        background-color: #013D48; }
+    .Home-circle-wrap .Circle-aligncenter .Circle-goal.bottom {
+      top: 92px; }
+
 .Footer-wrap {
   position: relative;
   height: 400px;
@@ -1115,5 +1145,20 @@ p.strongtitle {
         border-color: white;
         background-color: #015261;
         color: white; }
+
+@media all and (max-width: 991px) {
+  .text-align-right {
+    text-align: center; }
+
+  .circle-text {
+    padding: 20px 40px 40px; }
+    .circle-text .strongtitle {
+      text-align: center; }
+
+  .Team-member-wrap {
+    max-width: 400px;
+    margin: 40px auto 0; }
+    .Team-member-wrap .memberName {
+      text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -61,3 +61,55 @@ p.strongtitle {
 
 	}
 }
+
+
+.Home-circle-wrap {
+	padding: 30px 30px;
+	display: inline-block;
+
+	.Circle-aligncenter {
+		max-width: 180px;
+		margin: 0px auto 0px;
+
+		#circle {
+			position: relative;
+			box-shadow: $box-shadow4;
+			border-radius: 100px;
+			height: 180px;
+		}
+
+		.Circle-goal {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			p {
+				text-align: center;
+				font-size: 24px;					
+				text-transform: uppercase;
+				i {
+					display: none;
+				}
+			}
+		}
+
+		.Circle-goal.top {
+			top: 55px;
+		}
+
+		.Circle-goal.hr {
+			top: 77px;
+			text-align: center;
+			.hr-- {
+				display: inline-block;
+				width: 70px;
+				height: 2px;
+				background-color: $font-col;
+			}
+		}
+
+		.Circle-goal.bottom {
+			top: 92px;
+		}
+	}
+}

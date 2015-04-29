@@ -228,10 +228,6 @@
 	}
 }
 
-.Home-circle-wrap {
-	padding: 30px 0;
-	display: inline-block;
-}
 
 
 .registerpage.login {
@@ -255,16 +251,19 @@
 	padding-bottom: 120px;
 	margin: 50px auto;
 }
-.Header-wrap.login .Header-box .Input-item input {
-	margin-bottom: 15px;
+.Header-wrap.login .Header-box {
+	.Input-item input {
+		margin-bottom: 15px;
+	}
+	.button-wrap {
+		height: 105px;
+	}
+
 }
-.Header-wrap.login .Header-box .button-wrap {
-	height: 105px;
-}
 
 
-
-
-.invalid .register-form {
-	border: 2px solid $red !important;
+.invalid {
+	.register-form {
+		border: 2px solid $red !important;
+	}
 }

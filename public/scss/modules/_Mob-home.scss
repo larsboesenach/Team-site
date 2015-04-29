@@ -1,0 +1,22 @@
+
+
+@media all and (max-width: 991px) {
+	.text-align-right {
+		text-align: center;
+	}
+
+	.circle-text {
+		padding: 20px 40px 40px;
+		.strongtitle {
+			text-align: center;
+		}
+	}
+
+	.Team-member-wrap {
+		max-width: 400px;
+		margin: 40px auto 0;
+		.memberName {
+			text-align: center;
+		}
+	}
+}

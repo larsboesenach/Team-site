@@ -82,6 +82,7 @@
 	<div class="container">
 
 		<div class="col-md-5">
+			
 			<div class="text-align-right">
 			<div class="Home-circle-wrap">
 				<div class="Circle-aligncenter">
@@ -95,7 +96,7 @@
 				        </div>
 
 				        <div class="Circle-goal bottom">
-				            <p><?php echo $goal; ?></p>
+				            <p>2500</p>
 				        </div>
 				    </div>
 				</div>
@@ -188,7 +189,7 @@
             gradient: ["#3ffb68", "#5ce0af"]
         },
     }).on('circle-animation-progress', function(event, progress, stepValue) {
-    $(this).find('.text').html(parseInt(2500 * progress) + '<i>kcal</i>');
+    $(this).find('.text').html(parseInt(1250 * progress) + '<i>kcal</i>');
 });
 </script>
 

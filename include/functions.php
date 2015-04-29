@@ -17,7 +17,7 @@ function check_presence($value) {
 
 
 function checkvariation($password){
-  $pattern = "/.*^(?=.{8,50})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$/";
+  $pattern = "/.*^(?=.{8,50})(?=.*[a-z])(?=.*[0-9]).*$/";
    if(preg_match($pattern,$password)){
    	$rating = "";
    	$length = strlen($password);
@@ -25,7 +25,7 @@ function checkvariation($password){
 			$rating = "";
 		};
    }else{
-   	$rating = "Your password is not safe enough<br>";
+   	$rating = "Your password is not safe enough";
    };
    	return $rating;
 };

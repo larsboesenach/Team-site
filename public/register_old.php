@@ -43,7 +43,31 @@ if (isset($_POST['submit'])) {
 			header('location: login.php');
 			exit;
 			} else {
-			$message = "invoer ging fout<br>";
+			?>
+				<div class="Setgoal-content hidden">
+				<p class="strongtitle">Set your goal</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo</p>
+
+				<div class="fields">
+					<div class="Input-item">
+						<input class="check register-form" placeholder="Your height in meters">
+					</div>
+
+					<div class="Input-item">
+						<input class="check register-form" placeholder="Your weight in kilos">
+					</div>
+				</div>
+				
+				<div class="button-wrap" id="finish">
+					<p>finish!</p>
+					<ul class="dots">
+						<li class="dot1 on"></li>
+						<li class="dot2 on"></li>
+						<li class="dot3"></li>
+					</ul>
+				</div>
+			</div>
+			<?php
 			};
 	};
 };

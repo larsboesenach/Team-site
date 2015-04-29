@@ -1028,8 +1028,8 @@ html, body {
 .Header-wrap.login .Header-box .button-wrap {
   height: 105px; }
 
-.Input-item .invalid input {
-  border: 2px solid #F92A08; }
+.invalid .register-form {
+  border: 2px solid #F92A08 !important; }
 
 .Content-entry.greyBG {
   background-color: #EEEEEE; }

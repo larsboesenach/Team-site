@@ -183,12 +183,13 @@
 				opacity: 0;
 				@include easing-mixin-1;
 
-				//temp css
-				background-color: $font-col;
+				
+				background-image: url('../img/update_arrow.svg');
+				background-size: cover;
 				margin: 0;
-				height: 20px;
-				width: 20px;
-				border-radius: 100px;
+				height: 18px;
+				width: 18px;
+				
 
 			}
 
@@ -348,3 +349,7 @@
 	}// content-entry
 }// sidebar-fixx
 
+.no-records {
+	font-size: $FontSize-Titels;
+	text-align: center;
+}

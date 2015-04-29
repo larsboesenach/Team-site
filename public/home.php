@@ -8,6 +8,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script rel="text/javascript" src="js/custom-js.js"></script>
 	<script src="js/parallax.min.js"></script>
+	<script src="js/circle-progress.js"></script>
 	<!-- -------------- -->
 	<!-- Bootstrap	-->
 	<!-- Latest compiled and minified CSS -->
@@ -81,10 +82,27 @@
 	<div class="container">
 
 		<div class="col-md-5">
-			<div class="circle-img">
-				<img src="img/Circle.jpg">
+			<div class="text-align-right">
+			<div class="Home-circle-wrap">
+				<div class="Circle-aligncenter">
+				    <div id="circle">
+				        <div class="Circle-goal top">
+				            <p class="text"></p>
+				        </div>
+				    
+				        <div class="Circle-goal hr">
+				            <div class="hr--"></div>
+				        </div>
+
+				        <div class="Circle-goal bottom">
+				            <p><?php echo $goal; ?></p>
+				        </div>
+				    </div>
+				</div>
 			</div>
-		</div>
+			</div>
+
+		</div><!-- colmd5 -->
 
 		<div class="col-md-7">
 			<div class="circle-text">
@@ -159,6 +177,19 @@
 </div>
 
 
-
+<script>
+    $('#circle').circleProgress({
+        value: 0.5,
+        size: 180,
+        startAngle: -Math.PI *0.5,
+        thickness: 20,
+        lineCap: 'round',
+        fill: {
+            gradient: ["#3ffb68", "#5ce0af"]
+        },
+    }).on('circle-animation-progress', function(event, progress, stepValue) {
+    $(this).find('.text').html(parseInt(2500 * progress) + '<i>kcal</i>');
+});
+</script>
 
 </div><!-- homepage -->

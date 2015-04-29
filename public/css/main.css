@@ -44,6 +44,9 @@ input {
   .text-center p, .text-center a, .text-center span {
     text-align: center; }
 
+.text-align-right {
+  text-align: right; }
+
 .pos-relative {
   position: relative; }
 
@@ -924,6 +927,9 @@ html, body {
         .Header-wrap .Header-box .button-wrap a:hover {
           background-color: #008eaa; }
 
+.invalid input {
+  border: 2px solid #F92A08; }
+
 .registerpage .Nav-wrap {
   position: relative;
   z-index: 10;
@@ -1000,6 +1006,10 @@ html, body {
   display: none; }
 .registerpage .show {
   display: block; }
+
+.Home-circle-wrap {
+  padding: 30px 0;
+  display: inline-block; }
 
 .registerpage.login .SIGNIN-button {
   display: none; }

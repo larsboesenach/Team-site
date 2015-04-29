@@ -69,4 +69,21 @@ $(document).ready(function(){
         });
        
     }); 
+
+  $(document).on('click', '.UserSettings-button', function(){
+         $.post("../include/ajax/user_settings_AJAX.php",
+        {
+           username: $('.form-name').val(),
+           password: $('.form-pass').val(),
+           password_current: $('.form-pass_current').val(),
+           email: $('.form-email').val(),
+
+        },
+        function(data,status){
+          var divs = data.split('----');
+          $('.User-content.settings').html(divs[0]);
+
+        });
+       
+    }); 
 }); //document.ready

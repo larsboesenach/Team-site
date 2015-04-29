@@ -26,34 +26,7 @@
 		</div>
 		
 		<div class="User-content settings">
-			<div class="UserClose-button">
-				<p>Close Profile</p>
-				<img src="img/dark_kruisje-2.svg">
-			</div>
-
-			<div class="Content">
-				<div class="Title"><h2>Settings</h2></div>
-				
-				<div class="Input-item">
-					<p>Change user name</p>
-					<input class="check" type="text" placeholder="Name" required>
-				</div>
-
-				<div class="Input-item">
-					<p>Change email adress</p>
-					<input class="check" type="email" placeholder="Email" required>
-				</div>
-
-				<div class="Input-item">
-					<p>Change password</p>
-					<input type="password" class="check pass" placeholder="Current password" required>
-					<input type="password" class="check pass" placeholder="New password">
-				</div>
-			</div>
-
-			<div class="UserSettings-button update">
-				<p>Update</p>
-			</div>
+		<?php include("ajax/user_settings.php"); ?>
 		</div>
 
 

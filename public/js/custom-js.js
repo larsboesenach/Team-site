@@ -41,10 +41,6 @@ $(document).ready(function() {
 		$('.UserSettings').removeClass('Goal-active');
 	});
 
-	$('.UserSidebar-button.logout').on('click', function() {// Settings button
-		// new code for lougout button
-	});
-
 	// - - - - - - - - - - - - -
 
 	$('#intake').on('click', function() {// Goal button

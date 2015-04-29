@@ -7,6 +7,7 @@
 	<!-- jQuery link -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script rel="text/javascript" src="js/custom-js.js"></script>
+	<script src="js/parallax.min.js"></script>
 	<!-- -------------- -->
 	<!-- Bootstrap	-->
 	<!-- Latest compiled and minified CSS -->
@@ -61,13 +62,12 @@
 
 <div class="homepage">
 
-<div class="Header-wrap">
+<div class="Header-wrap" style data-parallax="scroll" data-image-src="img/bgimg-run.jpg">
 	<div class="container">
 	
 		<div class="Header-box">
 			<p class="strongtitle">Keep track</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo</p>
+			<p>You eat everyday, healthy, maybe unhealthy, or everything in between. Get an overview of your daily calorie intake. </p><p> Starting is easy! In just 3 simple steps you will have your own Countr.cc log and you will be in control of your diet.</p>
 
 			<div class="button-wrap">
 				<a href="register.php">Start right now!</a>
@@ -89,7 +89,7 @@
 		<div class="col-md-7">
 			<div class="circle-text">
 				<p class="strongtitle">Set your goal and work on it</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloamet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo</p>
+				<p>Countr.cc makes tracking your calories very easy and gives you a quick overview of your daily calorie intake. You are able to set your daily goal, and then you can start counting calories everyday.  Countr.cc is a tool that allows you more control over the ability to lose, gain or maintain weight.</p>
 			</div>
 		</div>
 
@@ -105,11 +105,13 @@
 		<div class="col-md-4">
 			<div class="Team-member-wrap">
 				
-				<div class="prof-img"></div>
+				<div class="prof-img1" style="margin: 30px auto 60px; max-width: 150px; min-height: 130px;">
+					<img src="img/icons-09.svg" width="150px">
+				</div>
 
 				<p class="memberName">Easy logging!</p>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo</p>
+				<p>Your log will give you a daily overview, this log will, unlike this illustration, be easy to understand.</p>
 				
 			</div>
 		</div>
@@ -117,11 +119,13 @@
 		<div class="col-md-4">
 			<div class="Team-member-wrap">
 				
-				<div class="prof-img"></div>
+				<div class="prof-img1" style="margin: 30px auto 60px; max-width: 150px; min-height: 130px;">
+					<img src="img/icons-10.svg" width="150px">
+				</div>
 
 				<p class="memberName">Track the results!</p>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo</p>
+				<p>Countr.cc gives you an easy overview of your past intake so you have an overview of your past intake.</p>
 
 			</div>
 		</div>
@@ -129,11 +133,13 @@
 		<div class="col-md-4">
 			<div class="Team-member-wrap">
 				
-				<div class="prof-img"></div>
+				<div class="prof-img1" style="margin: 30px auto 60px; max-width: 150px; min-height: 130px;">
+					<img src="img/icons-11.svg" width="150px">
+				</div>
 
 				<p class="memberName">Reach your goals!</p>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo</p>
+				<p>You will clearly see a difference after you have started, if you have a weight goal, pursue it now!</p>
 
 			</div>
 		</div>

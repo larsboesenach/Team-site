@@ -80,7 +80,7 @@ if (isset($_POST['submit'])) {
 
 
 
-<div class="Header-wrap login">
+<div class="Header-wrap login bg-image-fixed">
     <div class="container">
 
         <div class="Header-box">
@@ -110,10 +110,6 @@ if (isset($_POST['submit'])) {
     
     </div>
 </div>
-
-
-
-<a href="register.php"> registreer een account </a>
 
 </body>
 </html>

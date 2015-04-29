@@ -74,7 +74,7 @@ if (isset($message)){
 };
 	?>
 
-<form action="register.php" method="post">
+<form action="register_old.php" method="post">
 	username:
 	<input type="text" name="username" value="<?php if(isset($username)){echo $username;}; ?>"><br>
 	password: 

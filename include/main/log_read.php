@@ -46,7 +46,7 @@ $logtime = gettime();
   <div class="Entry-make-new-entry">
           <p>Make a new entry</p>
         </div>
-
+<input type="submit" value="submit" class="submit" style="position: absolute; bottom: 0; left: -10px; z-index: 9999; opacity: 0;">
         <div class="Entry-input-form">
           <div class="Make-entry-content">     
 

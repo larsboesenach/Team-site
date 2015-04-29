@@ -32,7 +32,7 @@
 
 
 
-<div class="Header-wrap">
+<div class="Header-wrap bg-image-fixed">
 	<div class="container">
 	
 		<div class="Header-box">

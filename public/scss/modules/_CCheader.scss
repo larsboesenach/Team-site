@@ -265,8 +265,6 @@
 
 
 
-.Input-item .invalid {
-	input {
-		border: 2px solid $red;
-	}
+.invalid .register-form {
+	border: 2px solid $red !important;
 }

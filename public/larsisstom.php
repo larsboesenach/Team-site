@@ -1,4 +1,4 @@
 <?php
 
-echo $error;
+echo "Hallo :D";
 ?>

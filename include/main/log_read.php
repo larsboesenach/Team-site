@@ -22,14 +22,20 @@ $logtime = gettime();
 <?php $dataq = query_logread($logtime['utctimestamp'], $_SESSION['userid']); 
   $totalintake1 = 0;
   if(mysqli_num_rows($dataq) == 0){    echo '<p class="no-records"> No records of today.</p>';
-  } else {
+  } else { ?>
+              <table class="intake">
+            <tr>
+              <td><p>Amount</p></td>
+              <td><p>Product name</p></td>
+              <td><p>Kilo Calories (KCAL)</p></td>
+            </tr> <?php
    while ($logdata = mysqli_fetch_assoc($dataq)){
          echo "<tr><td><p>" . $logdata["amount"] . "x</p></td><td><p>";
          echo $logdata["name"] . "</p></td><td><p>" . $logdata["calories"] . " kcal";
          $totalcalories =  ($logdata["calories"] *  $logdata["amount"]);
          echo "</p></td></tr>";
 
-    };
+    }; ?> </table> <?php
 
 //echo "<br>total intake today is: " .  totalcalories($logtime['utctimestamp'], $_SESSION['userid']);
   }

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Team project website</title>
+	<title>Countr.cc || Count Your Calories</title>
 	
 	<!-- jQuery link -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

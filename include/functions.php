@@ -14,8 +14,6 @@ function check_presence($value) {
 	return isset($value) && $value !== "";
 };
 
-
-
 function checkvariation($password){
   $pattern = "/.*^(?=.{8,50})(?=.*[a-z])(?=.*[0-9]).*$/";
    if(preg_match($pattern,$password)){

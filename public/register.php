@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>countr.cc || <?php echo $_SESSION['username'] ?></title>
+  <title>countr.cc || Register</title>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script rel="text/javascript" src="js/custom-js.js"></script>
@@ -56,52 +56,11 @@
 				
 				<div class="button-wrap" id="continue">
 					<p class="register-submit-1">continue</p>
-					<ul class="dots">
+					<!-- <ul class="dots">
 						<li class="dot1 on"></li>
 						<li class="dot2"></li>
 						<li class="dot3"></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="Setgoal-content hidden">
-				<p class="strongtitle">Set your goal</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo</p>
-
-				<div class="fields">
-					<div class="Input-item">
-						<input class="check register-form" placeholder="Your height in meters">
-					</div>
-
-					<div class="Input-item">
-						<input class="check register-form" placeholder="Your weight in kilos">
-					</div>
-				</div>
-				
-				<div class="button-wrap" id="finish">
-					<p>finish!</p>
-					<ul class="dots">
-						<li class="dot1 on"></li>
-						<li class="dot2 on"></li>
-						<li class="dot3"></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="done-content hidden">
-				<p class="strongtitle">All done registering!</p>
-				<p>You can now go to the app and login with your login details you've just entered.
-				So what are you waiting for lets start counting! :D</p>
-
-				
-				
-				<div class="button-wrap">
-					<p>Go to app</p>
-					<ul class="dots">
-						<li class="dot1 on"></li>
-						<li class="dot2 on"></li>
-						<li class="dot3 on"></li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 

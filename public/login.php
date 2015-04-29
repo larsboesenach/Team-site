@@ -3,7 +3,7 @@
 <?php require_once("../include/functions.php"); ?>
 
 <?
-
+$message = "";
 if (isset($_POST['submit'])) {
   $username = mysqli_real_escape_string($connection, $_POST['username']);
   $password = $_POST['password'];
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
       $_SESSION['ingelogd'] = true;
       header ("location: ". " index.php");
       } else {
-        $message = "iets ging fout";
+        $message .= "iets ging fout";
       };
     };
   };
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>countr.cc || <?php echo $_SESSION['username'] ?></title>
+  <title>countr.cc || Sign In</title>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script rel="text/javascript" src="js/custom-js.js"></script>
@@ -59,18 +59,11 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
 
-<?php if (isset($message)){
-      echo "$message";
-    };
-
+<?php
     if (isset($_SESSION['ingelogd'])) {
-  echo " status: ingelogd<br> ";
+      header("location". "index.php");
   } else {
-  
-  }
-
-  //print_r($result);
-
+  };
 ?>
 
 <div class="registerpage login">
@@ -86,7 +79,7 @@ if (isset($_POST['submit'])) {
         <div class="Header-box">
             <div class="Register-content show">
                 <p class="strongtitle">Login</p>
-
+<?php if (!empty($message)){ ?> <p> something went wrong, please try again. </p><?php }; ?>
                 <form action="login.php" method="post">
                     <div class="fields">
                         <p>username:</p>

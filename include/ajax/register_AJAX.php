@@ -1,5 +1,7 @@
 <?php require_once("../db_connect.php"); ?>
 <?php require_once("../functions.php"); ?>
+<?php require_once("../session.php"); ?>
+
 <?php
 
 $username = htmlspecialchars($_POST['username']);
@@ -40,11 +42,19 @@ $message = "";
 		$query .= "'{$username}', '{$passwordcrypted}', '{$email}'";
 		$query .= ")";
 		$result = mysqli_query($connection, $query);
-//anders, reload form met feedback
+//als dit gelukt is, lees de de info uit de database, en log de user in.
 		if ($result) {
-
-			include("register_2_ajax.php");
-
+			  $sessionquery = "SELECT * FROM users WHERE (username = '$username') LIMIT 1";
+    		$sessionqueryresult = mysqli_query($connection, $sessionquery);
+    		$inlogsession = mysqli_fetch_assoc($sessionqueryresult);
+      		$_SESSION['username'] = $username;
+      		$_SESSION['userid'] = $inlogsession['id'];
+      		$_SESSION['ingelogd'] = true;
+      		//forward to app by jQuery
+?>
+<script> window.location.replace("../public/index.php");
+</script>
+<?php
 			};
 	}else{
 ?>
@@ -68,13 +78,14 @@ $message = "";
 				
 				<div class="button-wrap" id="continue">
 					<p class="register-submit-1">continue</p>
-					<ul class="dots">
+<!-- 					<ul class="dots">
 						<li class="dot1 on"></li>
 						<li class="dot2"></li>
 						<li class="dot3"></li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
+
 
 <?php 
 };

@@ -4,11 +4,12 @@
 
 <?
 $message = "";
-if (isset($_POST['submit'])) {
+
+if (isset($_POST['username'])) {
   $username = mysqli_real_escape_string($connection, $_POST['username']);
+};
+if (isset($_POST['submit'])) {
   $password = $_POST['password'];
-
-
   if (empty($formerror)) {
 
 
@@ -27,7 +28,9 @@ if (isset($_POST['submit'])) {
       } else {
         $message .= "iets ging fout";
       };
-    };
+    } else {
+        $message .= "iets ging fout";
+      };;
   };
 };
 
@@ -79,18 +82,18 @@ if (isset($_POST['submit'])) {
         <div class="Header-box">
             <div class="Register-content show">
                 <p class="strongtitle">Login</p>
-<?php if (!empty($message)){ ?> <p> something went wrong, please try again. </p><?php }; ?>
+<?php if (!empty($message)){ ?> <p> the username and password you entered do not match, please try again. </p><?php }; ?>
                 <form action="login.php" method="post">
                     <div class="fields">
-                        <p>username:</p>
+
                         <div class="Input-item">
-                            <input type="text" name="username" value="<?php if(isset($username)){echo $username;}; ?>"><br>
+                            <input type="text" name="username" <?php if (!empty($username)){echo'value="' . $username;}else{echo 'placeholder="Username';} ?>"><br>
                         </div>
 
-                        <p>password:</p>
+
 
                         <div class="Input-item">
-                            <input type="password" name="password" value=""><br>
+                            <input type="password" name="password" placeholder="password"><br>
                         </div>
 
                         <div class="button-wrap" id="continue">

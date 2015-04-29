@@ -44,7 +44,7 @@ $distance = $goal - $count;
         <?php if ($countervalue > 1) { ?>
         value: <?php echo $countervalue - 1; ?>,
         fill: {
-            gradient: ["#f84f3e", "#e3812f"]
+            gradient: ["#FC3845", "#FF7D27"]
         },
         emptyFill: 'rgba(63, 251, 104, 1)',
        <?php }else{ ?>

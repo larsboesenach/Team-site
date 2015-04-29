@@ -429,7 +429,9 @@ html, body {
 
 .no-records {
   font-size: 18px;
-  text-align: center; }
+  text-align: center;
+  color: #bbbbbb;
+  padding: 20px; }
 
 .Sidebar-wrap {
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); }

@@ -352,4 +352,6 @@
 .no-records {
 	font-size: $FontSize-Titels;
 	text-align: center;
+	color: darken($grey-bg1,20%);
+	padding: 20px;
 }

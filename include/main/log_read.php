@@ -50,7 +50,9 @@ $logtime = gettime();
 <div class="Add-Button" id="Add-Button">
     <div class="pos-relative">
         <p>+</p>
-        <span>+</span>
+        
+        <span></span>
+        
         <input type="submit" class="submit">
     </div>
 </div>

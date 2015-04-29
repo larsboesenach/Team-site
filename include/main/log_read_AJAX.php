@@ -24,7 +24,7 @@ $logtime = gettime();
             </tr>
 <?php $dataq = query_logread($logtime['utctimestamp'], $_SESSION['userid']); 
   $totalintake1 = 0;
-  if(mysqli_num_rows($dataq) == 0){    echo "No records of today.";
+  if(mysqli_num_rows($dataq) == 0){    echo '<p class="no-records"> No records of today.</p>';
   } else {
    while ($logdata = mysqli_fetch_assoc($dataq)){
          echo "<tr><td><p>" . $logdata["amount"] . "x</p></td><td><p>";

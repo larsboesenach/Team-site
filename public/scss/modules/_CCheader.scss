@@ -39,7 +39,6 @@
 .SIGNIN-button {
 	text-align: right;
 	display: inline-block;
-
 	float: right;
 	a {
 		font-size: 10pt;
@@ -75,7 +74,6 @@
 
 
 .Header-wrap {
-	background-color: $blue-2;
 	position: relative;
 	z-index: 6;
 
@@ -145,7 +143,9 @@
 		right: 	0px;
 		top: 	80px;
 	}
-
+	.SIGNIN-button.login {
+		display: none;
+	}
 	.fields {
 		padding-top: 20px;
 		.Input-item {
@@ -175,11 +175,10 @@
 	.Header-box {
 		padding-bottom: 140px;
 		margin: 50px auto;
-		overflow: scroll;
 		.button-wrap {
 			height: 130px;
 
-			p {
+			p, input {
 				cursor: pointer;
 				display: inline-block;
 				margin: 0;
@@ -194,6 +193,7 @@
 				font-size: 18px;
 				outline: none;
 				font-weight: 200;
+				border: 0px solid;
 				@include easing-mixin-1;
 
 				&:hover {
@@ -227,4 +227,36 @@
 		display: block;
 	}
 }
+
+
+.registerpage.login {
+	.SIGNIN-button {
+		display: none; 
+	}
+
+	.SIGNIN-button.login {
+		display: block;
+	}
+}
+
+.bg-image-fixed{
+  background-image: url("../img/bgimg-run.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.Header-wrap.login .Header-box {
+	padding-bottom: 120px;
+	margin: 50px auto;
+}
+.Header-wrap.login .Header-box .Input-item input {
+	margin-bottom: 15px;
+}
+.Header-wrap.login .Header-box .button-wrap {
+	height: 105px;
+}
+
+
+
 

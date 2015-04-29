@@ -45,11 +45,12 @@ p.strongtitle {
 	box-shadow: $box-shadow4;
 
 	.prof-img {
-		width: 170px;
-		height: 170px;
-		background-color: $blue-4;
-		border-radius: 100px;
-		margin: 0px auto 30px;
+		margin: 30px auto 60px; 
+		max-width: 150px; 
+		min-height: 130px;
+		img {
+			 width: 150px;
+		}
 	}
 
 	.memberName {

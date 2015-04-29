@@ -2,11 +2,9 @@
 .Footer-wrap {
 	position: relative;
 	height: 400px;
-	background-image: url('../img/bgimg-run.jpg');
-	background-size: cover;
-	background-position: bottom;
 	z-index: 5;
 	margin-top: -150px;
+	background-color: $font-col;
 	
 	
 	.Footer-slogan {
@@ -35,12 +33,14 @@
 			font-size: 18px;
 			outline: none;
 			box-shadow: $box-shadow4;
+			border: 3px solid $green;
 
 			@include easing-mixin-1;
 
 			&:hover {
-				background-color: $greenH;
-				opacity: 0.7;
+				border-color: white;
+				background-color: lighten($font-col,5%);
+				color: white;
 			}
 		}
 	}

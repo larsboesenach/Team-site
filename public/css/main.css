@@ -840,12 +840,9 @@ html, body {
       background-color: white;
       color: #22C0DE; }
 
-.SIGNIN-button.login {
-  display: none; }
-
 .Header-wrap {
   position: relative;
-  z-index: 5; }
+  z-index: 6; }
   .Header-wrap .Header-box {
     min-height: 400px;
     width: 370px;
@@ -886,20 +883,6 @@ html, body {
         -o-transition: all 0.2s ease; }
         .Header-wrap .Header-box .button-wrap a:hover {
           background-color: #008eaa; }
-.bg-image-fixed{
-    background-color: #76D4E9;
-  background-image: url("../img/bgimg-run.jpg");
-  background-size: cover;
-  background-position: center center;
-}
-.Header-wrap.login .Header-box {
-  padding-bottom: 120px;
-  margin: 50px auto;
-  overflow: scroll; }
-  .Header-wrap.login .Header-box .Input-item input {
-    margin-bottom: 15px; }
-  .Header-wrap.login .Header-box .button-wrap {
-    height: 105px; }
 
 .registerpage .Nav-wrap {
   position: relative;
@@ -912,6 +895,8 @@ html, body {
   left: 0px;
   right: 0px;
   top: 80px; }
+.registerpage .SIGNIN-button.login {
+  display: none; }
 .registerpage .fields {
   padding-top: 20px; }
   .registerpage .fields .Input-item p {
@@ -932,8 +917,7 @@ html, body {
     position: relative; }
 .registerpage .Header-box {
   padding-bottom: 140px;
-  margin: 50px auto;
-  overflow: scroll; }
+  margin: 50px auto; }
   .registerpage .Header-box .button-wrap {
     height: 130px; }
     .registerpage .Header-box .button-wrap p, .registerpage .Header-box .button-wrap input {
@@ -982,6 +966,21 @@ html, body {
 .registerpage.login .SIGNIN-button.login {
   display: block; }
 
+.bg-image-fixed {
+  background-image: url("../img/bgimg-run.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.Header-wrap.login .Header-box {
+  padding-bottom: 120px;
+  margin: 50px auto; }
+
+.Header-wrap.login .Header-box .Input-item input {
+  margin-bottom: 15px; }
+
+.Header-wrap.login .Header-box .button-wrap {
+  height: 105px; }
+
 .Content-entry.greyBG {
   background-color: #EEEEEE; }
 
@@ -1018,11 +1017,11 @@ p.strongtitle {
   min-height: 370px;
   box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.25); }
   .Team-member-wrap .prof-img {
-    width: 170px;
-    height: 170px;
-    background-color: #007990;
-    border-radius: 100px;
-    margin: 0px auto 30px; }
+    margin: 30px auto 60px;
+    max-width: 150px;
+    min-height: 130px; }
+    .Team-member-wrap .prof-img img {
+      width: 150px; }
   .Team-member-wrap .memberName {
     font-size: 18px;
     text-transform: uppercase;
@@ -1032,11 +1031,9 @@ p.strongtitle {
 .Footer-wrap {
   position: relative;
   height: 400px;
-  background-image: url("../img/bgimg-run.jpg");
-  background-size: cover;
-  background-position: bottom;
   z-index: 5;
-  margin-top: -150px; }
+  margin-top: -150px;
+  background-color: #013D48; }
   .Footer-wrap .Footer-slogan {
     position: relative;
     z-index: 15;
@@ -1060,11 +1057,13 @@ p.strongtitle {
       font-size: 18px;
       outline: none;
       box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.25);
+      border: 3px solid #00FF6E;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease; }
       .Footer-wrap .Footer-slogan a:hover {
-        background-color: #00c254;
-        opacity: 0.7; }
+        border-color: white;
+        background-color: #015261;
+        color: white; }
 
 /*# sourceMappingURL=main.css.map */

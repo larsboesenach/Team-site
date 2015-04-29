@@ -105,8 +105,8 @@
 		<div class="col-md-4">
 			<div class="Team-member-wrap">
 				
-				<div class="prof-img1" style="margin: 30px auto 60px; max-width: 150px; min-height: 130px;">
-					<img src="img/icons-09.svg" width="150px">
+				<div class="prof-img">
+					<img src="img/icons-09.svg">
 				</div>
 
 				<p class="memberName">Easy logging!</p>
@@ -119,8 +119,8 @@
 		<div class="col-md-4">
 			<div class="Team-member-wrap">
 				
-				<div class="prof-img1" style="margin: 30px auto 60px; max-width: 150px; min-height: 130px;">
-					<img src="img/icons-10.svg" width="150px">
+				<div class="prof-img">
+					<img src="img/icons-10.svg">
 				</div>
 
 				<p class="memberName">Track the results!</p>
@@ -133,8 +133,8 @@
 		<div class="col-md-4">
 			<div class="Team-member-wrap">
 				
-				<div class="prof-img1" style="margin: 30px auto 60px; max-width: 150px; min-height: 130px;">
-					<img src="img/icons-11.svg" width="150px">
+				<div class="prof-img">
+					<img src="img/icons-11.svg">
 				</div>
 
 				<p class="memberName">Reach your goals!</p>

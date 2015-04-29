@@ -59,9 +59,8 @@
 
         <div class="Top-bar">
             <div class="Topbar-Logo">
-              <a href="#">
-                <img src="img/cc_full-logo.svg">
-              </a>
+                <img src="img/cc-33.svg"><a href="#">Calorie Countr</a>
+              
             </div>       
 
           <div class="Topbar-User">

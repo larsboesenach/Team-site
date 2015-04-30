@@ -46,11 +46,10 @@
 		display: inline-block;
 		text-align: right;
 		margin: 0;
-		width: 130px;
-		height: 40px;
 		background-color: $blue-4;
 		border-radius: 100px;
 		color: #FFF;
+		padding: 2px 30px;
 		text-decoration: none;
 		line-height: 40px;
 		text-align: center;
@@ -83,6 +82,7 @@
 		max-width: 370px;
 		margin: 100px auto;
 		padding: 50px;
+		padding-bottom: 150px;
 		background-color: white;
 		position: relative;
 
@@ -100,7 +100,7 @@
 			bottom: 0px;
 			left: 	0px;
 			right: 	0px;
-			height: 100px;
+			height: 125px;
 			background-color: $grey-bg2;
 			text-align: center;
 			padding-top: 25px;
@@ -115,7 +115,7 @@
 				line-height: 40px;
 				text-align: center;
 				text-transform: uppercase;
-				padding: 5px 30px;
+				padding: 2px 30px;
 				font-size: $FontSize-Text;
 				outline: none;
 				@include easing-mixin-1;
@@ -123,6 +123,10 @@
 				&:hover {
 					background-color: $blue-4H;
 				}
+			}
+			p {
+				margin: 12px 0 0;
+				color: $grey-font;
 			}
 		}
 	}

@@ -71,7 +71,8 @@
 			<p>You eat everyday, healthy, maybe unhealthy, or everything in between. Get an overview of your daily calorie intake. </p><p> Starting is easy! In just 3 simple steps you will have your own Countr.cc log and you will be in control of your diet.</p>
 
 			<div class="button-wrap">
-				<a href="register.php">Start right now!</a>
+				<a href="register.php">Get started</a>
+				<p>Register for free</p>
 			</div>
 		</div>	
 

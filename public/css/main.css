@@ -930,11 +930,10 @@ html, body {
     display: inline-block;
     text-align: right;
     margin: 0;
-    width: 130px;
-    height: 40px;
     background-color: #007990;
     border-radius: 100px;
     color: #FFF;
+    padding: 2px 30px;
     text-decoration: none;
     line-height: 40px;
     text-align: center;
@@ -955,6 +954,7 @@ html, body {
     max-width: 370px;
     margin: 100px auto;
     padding: 50px;
+    padding-bottom: 150px;
     background-color: white;
     position: relative;
     box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.35); }
@@ -967,7 +967,7 @@ html, body {
       bottom: 0px;
       left: 0px;
       right: 0px;
-      height: 100px;
+      height: 125px;
       background-color: #F7F7F7;
       text-align: center;
       padding-top: 25px; }
@@ -981,7 +981,7 @@ html, body {
         line-height: 40px;
         text-align: center;
         text-transform: uppercase;
-        padding: 5px 30px;
+        padding: 2px 30px;
         font-size: 14px;
         outline: none;
         -webkit-transition: all 0.2s ease;
@@ -989,6 +989,9 @@ html, body {
         -o-transition: all 0.2s ease; }
         .Header-wrap .Header-box .button-wrap a:hover {
           background-color: #008eaa; }
+      .Header-wrap .Header-box .button-wrap p {
+        margin: 12px 0 0;
+        color: #9F9F9F; }
 
 .registerpage .Nav-wrap {
   position: relative;
@@ -1248,7 +1251,7 @@ p.strongtitle {
   .Header-wrap .Header-box {
     min-height: 360px;
     padding: 30px;
-    padding-bottom: 110px; } }
+    padding-bottom: 140px; } }
 @media all and (max-width: 370px) {
   .CC-text {
     display: none !important; } }

@@ -6,6 +6,14 @@ $logtime = gettime();
     $count = totalcalories($logtime['utctimestamp'], $_SESSION['userid']);
     $countervalue = $count / $goal;
 $distance = $goal - $count; 
+$negative_distance = $distance - $distance - $distance;
+if ($distance < 0) {
+    $subline = '<span class="kcal-from-goal">' . $negative_distance . 'kcal</span> over your goal';
+}elseif ($distance == 0) {
+    $subline = 'you have reached your goal';
+}else {
+    $subline = '<span class="kcal-from-goal">' . $distance . 'kcal</span> away from your goal';
+}
 ?>
 
 <div class="Circle-aligncenter">
@@ -26,8 +34,7 @@ $distance = $goal - $count;
 
 <div class="Circle-progress-text">
     <h2>Today's progress</h2>
-    <p><span class="kcal-from-goal"><?php echo $distance ?> kcal</span> away from your goal</p>
-    
+    <p><?php echo $subline; ?></p>
 </div>
 
 

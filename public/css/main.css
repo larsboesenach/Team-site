@@ -23,7 +23,7 @@ h1, h2, h3,
 h4, h5, h6,
 input, span,
 select, :after {
-  color: #013D48;
+  color: #013d48;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1.1px; }
 
@@ -76,7 +76,7 @@ html, body {
   background: -o-linear-gradient(top, #f4f5df 0%, #f4f5df 9%, #008f5b 69%, #224e59 100%);
   background: -ms-linear-gradient(top, #f4f5df 0%, #f4f5df 9%, #008f5b 69%, #224e59 100%);
   background: linear-gradient(to bottom, #f4f5df 0%, #f4f5df 9%, #008f5b 69%, #224e59 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5df', endColorstr='#224e59', GradientType=0 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f5df', endColorstr='#224e59', GradientType=0 ); }
 
 .page-wrap:after {
   content: "";
@@ -120,7 +120,7 @@ html, body {
 
 .LoginScreenPage {
   position: absolute;
-  background-color: #d4d4d4;
+  background-color: #eeeeee;
   background-image: url("../img/Wallpaper.jpg");
   background-size: cover;
   background-position: center center;
@@ -149,7 +149,7 @@ html, body {
     margin: 0px 40px; }
     .Login-box .input-fields input {
       border: 0 solid #000;
-      background-color: #dedede;
+      background-color: #f7f7f7;
       color: #C9C9C9;
       padding: 10px;
       font-size: 16px;
@@ -201,7 +201,7 @@ html, body {
         float: left; }
       .Homepage .SidebarFix .Top-bar .Topbar-Logo a {
         display: inline-block;
-        color: #013D48;
+        color: #013d48;
         text-transform: uppercase;
         font-size: 18px;
         letter-spacing: 1.1px;
@@ -218,7 +218,7 @@ html, body {
       .Homepage .SidebarFix .Top-bar .Topbar-User p {
         display: inline-block;
         text-transform: uppercase;
-        color: #013D48;
+        color: #013d48;
         font-size: 18px;
         letter-spacing: 1.1px;
         padding-right: 20px; }
@@ -237,7 +237,7 @@ html, body {
     padding: 0 60px 110px;
     max-width: 700px;
     background-color: white;
-    min-height: 695px;
+    min-height: 735px;
     position: relative;
     box-shadow: 0px 4px 12px -3px rgba(0, 0, 0, 0.35); }
     .Homepage .SidebarFix .Content-entry .Content-Logo {
@@ -258,11 +258,11 @@ html, body {
       margin-top: 10px; }
       .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr p {
         text-transform: lowercase;
-        color: #013D48;
+        color: #013d48;
         font-size: 12px; }
       .Homepage .SidebarFix .Content-entry .Entry-contents .Entry-entries table tr:first-of-type p {
         text-transform: uppercase;
-        color: #013D48;
+        color: #013d48;
         font-size: 8px;
         padding: 10px 0 0;
         letter-spacing: 1.1px; }
@@ -280,7 +280,7 @@ html, body {
       width: 50px;
       height: 50px;
       border-radius: 50px;
-      background-color: #00FF6E;
+      background-color: #00ff6e;
       display: block;
       position: absolute;
       bottom: 20px;
@@ -293,7 +293,7 @@ html, body {
       .Homepage .SidebarFix .Content-entry .Add-Button p {
         display: inline-block;
         font-size: 40px;
-        color: #013D48;
+        color: #013d48;
         margin: 0px;
         margin-top: -4px;
         font-weight: 200;
@@ -348,7 +348,7 @@ html, body {
       left: 0;
       width: 100%;
       padding: 30px;
-      background-color: #e3e3e3;
+      background-color: #fcfcfc;
       -webkit-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       -moz-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -357,11 +357,11 @@ html, body {
         text-align: center;
         margin: 0; }
       .Homepage .SidebarFix .Content-entry .Entry-make-new-entry hr {
-        border-color: #013D48;
+        border-color: #013d48;
         margin-bottom: 25px; }
       .Homepage .SidebarFix .Content-entry .Entry-make-new-entry p {
         font-size: 18px;
-        color: #013D48;
+        color: #013d48;
         text-transform: uppercase; }
     .Homepage .SidebarFix .Content-entry .Entry-make-new-entry.enlargeBotPad {
       padding-bottom: 190px; }
@@ -374,7 +374,7 @@ html, body {
       z-index: 80;
       visibility: hidden;
       overflow: hidden;
-      background-color: #e3e3e3;
+      background-color: #fcfcfc;
       padding: 0 60px;
       -webkit-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
       -moz-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -396,7 +396,7 @@ html, body {
       width: 100%;
       border: 0px solid;
       padding: 10px 15px;
-      background-color: #dedede; }
+      background-color: #f7f7f7; }
     .Homepage .SidebarFix .Content-entry .Make-entry-content .intake-field .amount {
       width: 20%;
       min-width: 80px;
@@ -411,7 +411,7 @@ html, body {
       width: 100%;
       border: 0px solid;
       padding: 10px 15px;
-      background-color: #dedede; }
+      background-color: #f7f7f7; }
     .Homepage .SidebarFix .Content-entry .Make-entry-content .exercise-field .intensity {
       padding-right: 20px;
       width: 15%;
@@ -430,7 +430,7 @@ html, body {
 .no-records {
   font-size: 18px;
   text-align: center;
-  color: #a2a2a2;
+  color: #bbbbbb;
   padding: 20px; }
 
 .Sidebar-wrap {
@@ -438,17 +438,17 @@ html, body {
   .Sidebar-wrap a, .Sidebar-wrap p,
   .Sidebar-wrap h1, .Sidebar-wrap h2, .Sidebar-wrap h3,
   .Sidebar-wrap h4, .Sidebar-wrap h5, .Sidebar-wrap h6 {
-    color: #013D48; }
+    color: #013d48; }
   .Sidebar-wrap hr {
     border: 0px solid white;
-    background-color: #013D48;
+    background-color: #013d48;
     opacity: 0.2;
     height: 1px;
     margin: 13px 0; }
 
 .Sidebar-wrap {
   width: 450px;
-  background-color: #20B6D3;
+  background-color: #20b6d3;
   position: fixed;
   top: 0;
   left: 0;
@@ -492,7 +492,7 @@ html, body {
           display: inline-block;
           width: 70px;
           height: 2px;
-          background-color: #013D48; }
+          background-color: #013d48; }
       .Sidebar-wrap .Circle-wrap .Circle-aligncenter .Circle-goal.bottom {
         top: 92px; }
     .Sidebar-wrap .Circle-wrap .Circle-progress-text {
@@ -512,7 +512,7 @@ html, body {
     z-index: 90;
     padding-bottom: 10px; }
     .Sidebar-wrap .Sidebar-goal-wrap .Sidebar-goal {
-      background-color: #22C0DE;
+      background-color: #22c0de;
       cursor: pointer;
       padding: 20px;
       border-radius: 100px;
@@ -528,7 +528,7 @@ html, body {
   .Sidebar-wrap .Sidebar-log-wrap {
     position: relative;
     z-index: 89;
-    background-color: #20B6D3; }
+    background-color: #20b6d3; }
     .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap h2 {
       text-align: center;
       font-size: 18px;
@@ -542,7 +542,7 @@ html, body {
     .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-overview {
       padding: 5px; }
     .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count {
-      background-color: #76D4E9;
+      background-color: #76d4e9;
       padding: 15px 70px; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .week-count-rel {
         position: relative; }
@@ -562,13 +562,13 @@ html, body {
         font-size: 35px;
         background-color: transparent;
         border: 0px solid white;
-        color: #013D48; }
+        color: #013d48; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.left {
         left: 0; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-count .navigator.right {
         right: 0; }
     .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output {
-      background-color: #22C0DE; }
+      background-color: #22c0de; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table {
         width: 100%; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .day {
@@ -584,7 +584,7 @@ html, body {
           .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table .kcal p {
             text-align: right; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.negative p {
-          color: #FC3845; }
+          color: #fc3845; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.current-day p {
           font-weight: 600; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output table tr.empty p {
@@ -599,7 +599,7 @@ html, body {
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-content {
         padding: 0px 70px 20px; }
       .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average {
-        background-color: #20B6D3;
+        background-color: #20b6d3;
         padding: 15px 70px; }
         .Sidebar-wrap .Sidebar-log-wrap .Sidebar-log .Week-wrap .Week-output .Week-average .left p {
           text-align: left; }
@@ -661,7 +661,7 @@ html, body {
   z-index: 200; }
 
 .UserSidebar-wrap {
-  background-color: #22C0DE;
+  background-color: #22c0de;
   position: fixed;
   z-index: 210;
   top: 50px;
@@ -688,7 +688,7 @@ html, body {
     background-color: #008eaa;
     border-color: #008eaa; }
   .UserSidebar-wrap .UserLogout-wrap {
-    background-color: #20B6D3;
+    background-color: #20b6d3;
     position: absolute;
     bottom: 50px;
     left: 50px;
@@ -720,12 +720,12 @@ html, body {
   -o-transition: all 0.2s ease; }
 
 .UserSettings-button.update {
-  background-color: #dedede;
+  background-color: #f7f7f7;
   padding: 20px;
   text-align: center; }
   .UserSettings-button.update p {
-    background-color: #22C0DE;
-    border-color: #22C0DE;
+    background-color: #22c0de;
+    border-color: #22c0de;
     display: inline-block;
     padding: 15px 80px; }
     .UserSettings-button.update p:hover {
@@ -775,14 +775,14 @@ html, body {
     .User-content .Content .Input-item {
       position: relative; }
       .User-content .Content .Input-item p {
-        color: #013D48;
+        color: #013d48;
         font-size: 14px;
         margin-top: 30px; }
       .User-content .Content .Input-item span {
         opacity: 0.3; }
       .User-content .Content .Input-item input, .User-content .Content .Input-item select {
         font-size: 14px;
-        background-color: #F6FAFB;
+        background-color: #f6fafb;
         width: 100%;
         border: 0px solid white;
         padding: 15px 20px;
@@ -793,14 +793,14 @@ html, body {
         .User-content .Content .Input-item select option {
           padding: 5px; }
       .User-content .Content .Input-item input.invalid {
-        border: 2px solid #FC3845;
+        border: 2px solid #fc3845;
         box-shadow: none; }
   .User-content input {
     outline: none; }
 
 .UserSettings.show.Settings-active .UserSidebar-button.settings p {
   border-color: white;
-  background-color: #22C0DE; }
+  background-color: #22c0de; }
 .UserSettings.show.Settings-active .UserSidebar-button.goal p:hover {
   background-color: #008eaa;
   border-color: #008eaa; }
@@ -811,7 +811,7 @@ html, body {
 
 .UserSettings.show.Goal-active .UserSidebar-button.goal p {
   border-color: white;
-  background-color: #22C0DE; }
+  background-color: #22c0de; }
 .UserSettings.show.Goal-active .UserSidebar-button.settings p:hover {
   background-color: #008eaa;
   border-color: #008eaa; }
@@ -867,7 +867,7 @@ html, body {
 
 .Nav-wrap {
   min-height: 80px;
-  background-color: #22C0DE;
+  background-color: #22c0de;
   padding-top: 20px;
   box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.35); }
 
@@ -913,7 +913,7 @@ html, body {
     transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
     .SIGNIN-button a:hover {
       background-color: white;
-      color: #22C0DE; }
+      color: #22c0de; }
 
 .Header-wrap {
   position: relative;
@@ -936,7 +936,7 @@ html, body {
       left: 0px;
       right: 0px;
       height: 100px;
-      background-color: #dedede;
+      background-color: #f7f7f7;
       text-align: center;
       padding-top: 25px; }
       .Header-wrap .Header-box .button-wrap a {
@@ -977,16 +977,16 @@ html, body {
   .registerpage .fields .Input-item {
     position: relative; }
     .registerpage .fields .Input-item p {
-      color: #013D48;
+      color: #013d48;
       font-size: 14px;
       margin-top: 30px; }
     .registerpage .fields .Input-item span {
       opacity: 0.3; }
     .registerpage .fields .Input-item input, .registerpage .fields .Input-item select {
       font-size: 14px;
-      background-color: #F6FAFB;
+      background-color: #f6fafb;
       width: 100%;
-      color: #013D48;
+      color: #013d48;
       letter-spacing: 1.1px;
       border: 2px solid transparent;
       padding: 15px 20px;
@@ -1067,13 +1067,13 @@ html, body {
   height: 105px; }
 
 .invalid .register-form {
-  border: 2px solid #FC3845 !important; }
+  border: 2px solid #fc3845 !important; }
 .invalid img {
   visibility: visible !important;
   opacity: 1 !important; }
 
 .Content-entry.greyBG {
-  background-color: #d4d4d4; }
+  background-color: #eeeeee; }
 
 .container.extra-pad {
   padding: 0 20px;
@@ -1150,7 +1150,7 @@ p.strongtitle {
         display: inline-block;
         width: 70px;
         height: 2px;
-        background-color: #013D48; }
+        background-color: #013d48; }
     .Home-circle-wrap .Circle-aligncenter .Circle-goal.bottom {
       top: 92px; }
 
@@ -1159,7 +1159,7 @@ p.strongtitle {
   height: 400px;
   z-index: 5;
   margin-top: -150px;
-  background-color: #013D48; }
+  background-color: #013d48; }
   .Footer-wrap .Footer-slogan {
     position: relative;
     z-index: 15;
@@ -1172,9 +1172,9 @@ p.strongtitle {
     .Footer-wrap .Footer-slogan a {
       display: inline-block;
       margin: 0;
-      background-color: #00FF6E;
+      background-color: #00ff6e;
       border-radius: 100px;
-      color: #013D48;
+      color: #013d48;
       text-decoration: none;
       line-height: 40px;
       text-align: center;
@@ -1183,7 +1183,7 @@ p.strongtitle {
       font-size: 18px;
       outline: none;
       box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.25);
-      border: 3px solid #00FF6E;
+      border: 3px solid #00ff6e;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease; }
@@ -1209,5 +1209,3 @@ p.strongtitle {
     margin: 40px auto 0; }
     .Team-member-wrap .memberName {
       text-align: center; } }
-
-/*# sourceMappingURL=main.css.map */

@@ -50,7 +50,7 @@ $(document).ready(function(){
         function(data,status){
           var divs = data.split('----');
           $('#log').html(divs[0]);
-          $('#counter-sidebar').html(divs[1]);  
+         // $('#counter-sidebar').html(divs[1]);  
         });
        
     }); 
@@ -81,7 +81,7 @@ $(document).ready(function(){
         },
         function(data,status){
           var divs = data.split('----');
-          $('.User-content.settings').html(divs[0]);
+          $('.usercontentsettings-ajax').html(divs[0]);
 
         });
        

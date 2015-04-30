@@ -24,10 +24,6 @@ if (isset($_POST['email'])){
 
 ?>
 
-<div class="UserClose-button">
-				<p>Close Profile</p>
-				<img src="img/dark_kruisje-2.svg">
-			</div>
 
 			<div class="Content">
 				<div class="Title"><h2>Settings</h2></div>

@@ -2,8 +2,8 @@
 // Input here your own custom javascript stuff ;)
 
 $(document).ready(function() {
-	$('#Add-Button').on('click', function() {
-		$('#Add-Button').toggleClass('active');
+	$(document).on('click', '#Add-Button', function() {
+		$(this).toggleClass('active');
 		$('.Entry-input-form').toggleClass('open');
 		$('.Entry-emptyspace').toggleClass('open');
 		$('.Entry-make-new-entry').toggleClass('enlargeBotPad');
@@ -12,45 +12,45 @@ $(document).ready(function() {
 	// - - - - - - - - - - - - -
 	//	Go to Settings or Goal page
 	
-	$('.UserWrap, .Topbar-Logo').on('click', function() {
+	$(document).on('click', '.UserWrap, .Topbar-Logo', function() {
 		$('.UserSettings').addClass('show'),
 		$('.UserSettings').addClass('Settings-active'),
 		$('.UserSettings').removeClass('Goal-active');
 	});
 
-	$('.Sidebar-goal').on('click', function() {
+	$(document).on('click', '.Sidebar-goal', function() {
 		$('.UserSettings').addClass('show'),
 		$('.UserSettings').addClass('Goal-active'),
 		$('.UserSettings').removeClass('Settings-active');
 	});
 
-	$('.UserClose-button').on('click', function() {
+	$(document).on('click', '.UserClose-button', function() {
 		$('.UserSettings').removeClass('show');
 	});
 
 	// - - - - - - - - - - - - -
 	// 	Activate buttons
 
-	$('.UserSidebar-button.goal').on('click', function() {// Goal button
+	$(document).on('click', '.UserSidebar-button.goal', function() {// Goal button
 		$('.UserSettings').addClass('Goal-active'),
 		$('.UserSettings').removeClass('Settings-active');
 	});
 
-	$('.UserSidebar-button.settings').on('click', function() {// Settings button
+	$(document).on('click', '.UserSidebar-button.settings', function() {// Settings button
 		$('.UserSettings').addClass('Settings-active'),
 		$('.UserSettings').removeClass('Goal-active');
 	});
 
 	// - - - - - - - - - - - - -
 
-	$('#intake').on('click', function() {// Goal button
+	$(document).on('click', '#intake', function() {// Goal button
 		$('.exercise-field').addClass('hidden'),
 		$('.intake-field').addClass('show'),
 		$('.exercise-field').removeClass('show'),
 		$('.intake-field').removeClass('hidden');
 	});
 
-	$('#exercise').on('click', function() {// Goal button
+	$(document).on('click', '#exercise', function() {// Goal button
 		$('.exercise-field').addClass('show'),
 		$('.intake-field').addClass('hidden'),
 		$('.exercise-field').removeClass('hidden'),

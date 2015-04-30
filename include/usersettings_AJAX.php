@@ -26,14 +26,7 @@
 		</div>
 		
 		<div class="User-content settings">
-
-		<div class="UserClose-button">
-				<p>Close Profile</p>
-				<img src="img/dark_kruisje-2.svg">
-			</div>
-			<div class="usercontentsettings-ajax">
-				<?php include("ajax/user_settings.php"); ?>
-			</div>
+		<?php include("ajax/user_settings.php"); ?>
 		</div>
 
 

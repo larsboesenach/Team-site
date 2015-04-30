@@ -261,23 +261,34 @@
 
 
 .Set-goal-wrap {
-	background-color: white;
 	position: fixed;
 	top: 	0;
 	left: 	0;
 	right: 	0;
 	bottom: 0;
 	z-index: 1000;
-	opacity: 0.8;
 	@incude easing-mixin-2;
 
 	display: none;
+
+	.Set-goal-bg {
+		background-color: white;
+		position: fixed;
+		top: 	0;
+		left: 	0;
+		right: 	0;
+		bottom: 0;
+		z-index: 1000;
+		opacity: 0.8;
+	}
 }
 
 .Invisible-sidebar-wrap {
 	width: 450px;
 	height: 100%;
 	padding: 292px 70px 0;
+	position: relative;
+	z-index: 1005;
 
 	.InvSidebar-goal-wrap {
 		position: relative;

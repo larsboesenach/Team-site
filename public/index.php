@@ -34,7 +34,14 @@
 <div class="page-wrap">
   <div class="Homepage">
     <div class="Set-goal-wrap">
-        
+
+        <div class="Invisible-sidebar-wrap">
+          <div class="InvSidebar-goal-wrap">
+            <p class="Sidebar-goal">Set your goal</p>
+          </div>
+        </div>
+
+        <div class="Set-goal-bg"></div>
     </div>
 
     <div class="Sidebar-wrap">

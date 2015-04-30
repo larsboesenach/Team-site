@@ -38,6 +38,16 @@ $green:     #00FF6E;
 $greenH:    darken( $green, 12% );
 
 // Colors assigned to specific objects
+<<<<<<< HEAD
+$grey-bg1:    #EEEEEE;
+$grey-bg2:    #F7F7F7;//BG natural
+$grey-bg3:    #FCFCFC;
+
+
+// $grey-bg1:		darken(#EEEEEE,10%);
+// $grey-bg2:    darken(#F7F7F7,10%);//BG natural
+// $grey-bg3:    darken(#FCFCFC,10%);
+=======
 $grey-bg1:		#EEEEEE;
 $grey-bg2:    #F7F7F7;
 $grey-bg3:    #FCFCFC;
@@ -46,6 +56,7 @@ $grey-bg3:    #FCFCFC;
 //$grey-bg2:    darken(#F7F7F7,10%);//BG natural
 //$grey-bg3:    darken(#FCFCFC,10%);
 
+>>>>>>> 26ba18f18613d730d16bd4c2f26750f9060e29f8
 //--------------------
 
 // Box-shadows
